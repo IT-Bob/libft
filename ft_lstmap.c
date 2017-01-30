@@ -6,26 +6,11 @@
 /*   By: aguerin <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/18 11:46:13 by aguerin           #+#    #+#             */
-/*   Updated: 2016/11/18 18:08:55 by aguerin          ###   ########.fr       */
+/*   Updated: 2017/01/30 12:16:36 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-static void	ft_lstaddend(t_list **alst, t_list *new)
-{
-	t_list *lst;
-
-	lst = *alst;
-	if (!lst)
-		lst = new;
-	else
-	{
-		while (lst->next)
-			lst = lst->next;
-		lst->next = new;
-	}
-}
 
 t_list		*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
 {
