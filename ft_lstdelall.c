@@ -17,7 +17,7 @@
 ** Suppression de toute la liste (libération de la mémoire allouée).
 */
 
-void	dellist(t_list *list)
+void	ft_lstdelall(t_list *list)
 {
 	t_list *new;
 
