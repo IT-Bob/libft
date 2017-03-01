@@ -1,0 +1,60 @@
+#include "libft.h"
+#include <stdlib.h>
+
+#include "libft.h"
+#include <stdlib.h>
+
+/*
+** ft_itoa_base peut convertir un nombre positif de la base 10 vers n'importe
+** quelle base comprise entre 1 et 38.
+*/
+
+static char	*ft_zero(char *nbr)
+{
+	nbr = (char*)ft_memalloc(2);
+	ft_strcpy(nbr, "0");
+	return (nbr);
+}
+
+static int	ft_size_itoa(unsigned long nb, int base)
+{
+	int	i;
+
+	i = 0;
+	while (nb > 0)
+	{
+		i++;
+		nb /= base;
+	}
+	return (i);
+}
+
+char	*ft_itoa_base(unsigned long nb, int base)
+{
+	long			mod;
+	size_t			size;
+	char			*nbr;
+
+	if (base < 2 || base > 37)
+	{
+		ft_putendl("Base incorrect...");
+		exit(0);
+	}
+	nbr = NULL;
+	if (nb == 0)
+		return (ft_zero(nbr));
+	size = ft_size_itoa(nb, base);
+	if ((nbr = (char*)ft_memalloc(size + 1)))
+	{
+		nbr[size] = '\0';
+		size--;
+		while (nb > 0)
+		{
+			mod = nb % base;
+			nbr[size--] = (mod > 9 ? mod - 10 + 'a' : mod + '0');
+			nb /= base;
+		}
+		return (nbr);
+	}
+	return (NULL);
+}

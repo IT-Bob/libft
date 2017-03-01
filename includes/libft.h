@@ -99,5 +99,6 @@ void			ft_lstaddend(t_list **alst, t_list *new);
 t_list			*ft_lstaddnew(void const *content, size_t content_size,
 								t_list *list);
 void			ft_delall(t_list *list);
+char			*ft_itoa_base(unsigned long nb, int base);
 
 #endif
