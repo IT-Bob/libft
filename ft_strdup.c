@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aguerin <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/08 10:03:54 by aguerin           #+#    #+#             */
 /*   Updated: 2016/11/21 11:33:01 by aguerin          ###   ########.fr       */

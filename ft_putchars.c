@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putchars.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aguerin <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/09 14:15:17 by aguerin           #+#    #+#             */
 /*   Updated: 2016/11/09 14:15:29 by aguerin          ###   ########.fr       */

@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstrs.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aguerin <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/14 14:23:58 by aguerin           #+#    #+#             */
 /*   Updated: 2016/11/21 18:13:35 by aguerin          ###   ########.fr       */

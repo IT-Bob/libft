@@ -3,7 +3,7 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: aguerin <marvin@42.fr>                     +#+  +:+       +#+         #
+#    By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/04 10:07:37 by aguerin           #+#    #+#              #
 #    Updated: 2017/03/08 10:04:46 by aguerin          ###   ########.fr        #

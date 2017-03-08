@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strfreejoin.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aguerin <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/20 10:05:57 by aguerin           #+#    #+#             */
 /*   Updated: 2017/01/20 10:05:59 by aguerin          ###   ########.fr       */

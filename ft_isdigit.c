@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   isdigit.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aguerin <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/07 12:10:56 by aguerin           #+#    #+#             */
 /*   Updated: 2016/11/07 12:22:02 by aguerin          ###   ########.fr       */

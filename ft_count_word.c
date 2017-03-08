@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_count_word.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aguerin <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/21 10:19:26 by aguerin           #+#    #+#             */
 /*   Updated: 2016/11/21 10:53:02 by aguerin          ###   ########.fr       */
