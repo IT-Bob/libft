@@ -6,7 +6,7 @@
 /*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 09:51:57 by aguerin           #+#    #+#             */
-/*   Updated: 2017/03/08 10:06:21 by aguerin          ###   ########.fr       */
+/*   Updated: 2017/03/08 13:43:38 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -101,4 +101,5 @@ t_list			*ft_lstaddnew(void const *content, size_t content_size,
 void			ft_delall(t_list *list);
 char			*ft_itoa_base(unsigned long nb, int base);
 long long int	ft_pow(int nb, unsigned int pow);
+
 #endif
