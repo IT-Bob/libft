@@ -14,6 +14,7 @@
 # define LIBFT_H
 
 # include <string.h>
+# include <wchar.h>
 
 void			*ft_memset(void *b, int c, size_t len);
 void			ft_bzero(void *s, size_t n);
@@ -106,5 +107,6 @@ int				ft_atoi_base(const char *str, int base);
 long long int	ft_pow(int nb, unsigned int pow);
 void			ft_error(char *message, int error);
 void			ft_putwchar(long c);
+void			ft_putwstr(wchar_t *str);
 
 #endif
