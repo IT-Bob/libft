@@ -11,8 +11,8 @@
 /* ************************************************************************** */
 
 /*
-** Comme la fonction ft_atoi, ft_atoi_base renvoie un entier converti depuis une
-** chaîne, mais représenté dans n'importe quelle base comprise entre 1 et 38.
+** Comme la fonction ft_atoi, ft_atoi_base renvoie un entier converti (en base
+** 10) depuis une chaîne, mais représenté dans n'importe quelle base (1<base<38)
 ** ft_atoi_base ne vérifie pas si la chaîne envoyée est correctement formatée en
 ** fonction de la base dans laquelle elle est représentée.
 */
