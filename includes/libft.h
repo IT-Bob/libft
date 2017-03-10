@@ -102,6 +102,7 @@ void			ft_delall(t_list *list);
 char			*ft_itoa_base(unsigned long nb, int base);
 void			ft_putnbr_long(long long int n);
 char			*ft_itoa_long(long long n);
+int				ft_atoi_base(const char *str, int base);
 long long int	ft_pow(int nb, unsigned int pow);
 void			ft_error(char *message, int error);
 
