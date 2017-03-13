@@ -12,6 +12,11 @@
 
 #include "libft.h"
 
+/*
+** ft_atoi() prend en entrée une chaîne de caractères (censée représenter un
+** nombre) et renvoie sa représentation en int.
+*/
+
 int	ft_atoi(const char *str)
 {
 	int i;
