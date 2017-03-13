@@ -21,7 +21,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	if (s1 && s2)
 	{
 		len = ft_strlen(s1) + ft_strlen(s2);
-		str = (char*)ft_memalloc(len + 1);
+		str = (char*)ft_memalloc(sizeof(char) * (len + 1));
 		if (str)
 		{
 			len = 0;

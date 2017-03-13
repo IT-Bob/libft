@@ -15,7 +15,7 @@
 
 static char	*ft_zero(char *nbr)
 {
-	nbr = (char*)ft_memalloc(2);
+	nbr = (char*)ft_memalloc(sizeof(char) * 2);
 	ft_strcpy(nbr, "0");
 	return (nbr);
 }

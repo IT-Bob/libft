@@ -42,7 +42,7 @@ static char	*ft_strnull(void)
 {
 	char	*str;
 
-	str = ft_memalloc(2);
+	str = (char*)ft_memalloc(sizeof(char) * 2);
 	if (str)
 	{
 		ft_strcpy(str, "");
