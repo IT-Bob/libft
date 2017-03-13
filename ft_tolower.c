@@ -11,7 +11,8 @@
 /* ************************************************************************** */
 
 /*
-** ft_tolower() renvoie la lettre donnée en paramètre, mais en minuscule.
+** ft_tolower() renvoie la lettre qui lui est donnée en paramètre, convertie
+** en minuscule.
 */
 
 int		ft_tolower(int c)

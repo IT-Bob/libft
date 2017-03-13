@@ -11,7 +11,8 @@
 /* ************************************************************************** */
 
 /*
-** ft_toupper() renvoie la lettre donnée en paramètre, mais en majuscule.
+** ft_toupper() renvoie la lettre qui lui est donnée en paramètre, convertie
+** en majuscule.
 */
 
 int		ft_toupper(int c)
