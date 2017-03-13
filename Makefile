@@ -20,23 +20,23 @@ SRC = src/
 CHAR = $(SRC)char/
 CONV = $(SRC)conversion/
 IS = $(SRC)is/
-LIST = $(SRC)list/
+LST = $(SRC)list/
 MATH = $(SRC)math/
 MEM = $(SRC)memory/
-PRINT = $(SRC)print/
+PUT = $(SRC)print/
+STRING = $(SRC)string/
 
 # Liste des fichiers sources
 PTC =\
-$(MEM)ft_memset.c $(MEM)ft_bzero.c $(MEM)ft_memcpy.c $(MEM)ft_memccpy.c $(MEM)ft_memmove.c $(MEM)ft_memchr.c $(MEM)ft_memcmp.c $(MEM)ft_memalloc.c $(MEM)ft_memdel.c $(MEM)ft_strnew.c $(MEM)ft_strdel.c $(MEM)ft_strclr.c $(MEM)ft_striter.c $(MEM)ft_striteri.c $(MEM)ft_strmap.c $(MEM)ft_strfreejoin.c\
-$(IS)ft_isalpha.c $(IS)ft_isdigit.c $(IS)ft_isalnum.c $(IS)ft_isascii.c $(IS)ft_isprint.c $(IS)ft_isspace.c\
 $(CHAR)ft_toupper.c $(CHAR)ft_tolower.c\
-ft_atoi.c ft_itoa.c ft_itoa_base.c ft_itoa_long.c ft_atoi_base.c \
-ft_lstnew.c ft_lstdelone.c ft_lstdel.c ft_lstadd.c ft_lstiter.c ft_lstmap.c ft_lstdelonejoin.c ft_lstaddend.c ft_lstaddnew.c ft_lstdelall.c\
-get_next_line.c\
-ft_strmapi.c ft_strequ.c ft_strnequ.c ft_strsub.c ft_strjoin.c ft_strtrim.c ft_strsplit.c ft_strlen.c ft_strdup.c ft_strcpy.c ft_strncpy.c ft_strcat.c ft_strncat.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strstr.c ft_strnstr.c ft_strcmp.c ft_strncmp.c ft_count_word.c\
-ft_putchar.c ft_putstr.c ft_putendl.c ft_putnbr.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c ft_putnbrl.c ft_putnbrs.c ft_putcharl.c ft_putchars.c ft_putstrs.c ft_putnbr_long.c ft_putwchar.c ft_putwstr.c\
-$(SRC)ft_error.c $(SRC)ft_swap.c\
+$(CONV)ft_atoi.c $(CONV)ft_itoa.c $(CONV)ft_itoa_base.c $(CONV)ft_itoa_long.c $(CONV)ft_atoi_base.c\
+$(IS)ft_isalpha.c $(IS)ft_isdigit.c $(IS)ft_isalnum.c $(IS)ft_isascii.c $(IS)ft_isprint.c $(IS)ft_isspace.c\
+$(LST)ft_lstnew.c $(LST)ft_lstdelone.c $(LST)ft_lstdel.c $(LST)ft_lstadd.c $(LST)ft_lstiter.c $(LST)ft_lstmap.c $(LST)ft_lstdelonejoin.c $(LST)ft_lstaddend.c $(LST)ft_lstaddnew.c $(LST)ft_lstdelall.c\
 $(MATH)ft_factorial.c $(MATH)ft_sqrt.c $(MATH)ft_pow.c\
+$(MEM)ft_memset.c $(MEM)ft_bzero.c $(MEM)ft_memcpy.c $(MEM)ft_memccpy.c $(MEM)ft_memmove.c $(MEM)ft_memchr.c $(MEM)ft_memcmp.c $(MEM)ft_memalloc.c $(MEM)ft_memdel.c $(MEM)ft_strnew.c $(MEM)ft_strdel.c $(MEM)ft_striter.c $(MEM)ft_striteri.c $(MEM)ft_strfreejoin.c\
+$(PUT)ft_putchar.c $(PUT)ft_putstr.c $(PUT)ft_putendl.c $(PUT)ft_putnbr.c $(PUT)ft_putchar_fd.c $(PUT)ft_putstr_fd.c $(PUT)ft_putendl_fd.c $(PUT)ft_putnbr_fd.c $(PUT)ft_putnbrl.c $(PUT)ft_putnbrs.c $(PUT)ft_putcharl.c $(PUT)ft_putchars.c $(PUT)ft_putstrs.c $(PUT)ft_putnbr_long.c $(PUT)ft_putwchar.c $(PUT)ft_putwstr.c\
+$(SRC)ft_error.c $(SRC)ft_swap.c $(SRC)get_next_line.c\
+$(STRING)ft_strclr.c $(STRING)ft_strmapi.c $(STRING)ft_strmap.c $(STRING)ft_strequ.c $(STRING)ft_strnequ.c $(STRING)ft_strsub.c $(STRING)ft_strjoin.c $(STRING)ft_strtrim.c $(STRING)ft_strsplit.c $(STRING)ft_strlen.c $(STRING)ft_strdup.c $(STRING)ft_strcpy.c $(STRING)ft_strncpy.c $(STRING)ft_strcat.c $(STRING)ft_strncat.c $(STRING)ft_strlcat.c $(STRING)ft_strchr.c $(STRING)ft_strrchr.c $(STRING)ft_strstr.c $(STRING)ft_strnstr.c $(STRING)ft_strcmp.c $(STRING)ft_strncmp.c $(STRING)ft_count_word.c\
 
 PTO = $(PTC:.c=.o)
 
