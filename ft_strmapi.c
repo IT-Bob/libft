@@ -24,7 +24,7 @@ char		*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 		len = ft_strlen(s);
 		if (len > 0)
 		{
-			str = (char*)ft_memalloc(len + 1);
+			str = (char*)ft_memalloc(sizeof(char) * (len + 1));
 			if (str)
 			{
 				while (*s)
