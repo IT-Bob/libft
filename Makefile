@@ -15,7 +15,7 @@ CC = gcc
 CFLAGS = -Wall -Werror -Wextra
 CPPFLAGS = -Iincludes
 
-# Sous dossier où sont placés les fichiers
+# Sous-dossiers où sont placés les fichiers
 SRC = src/
 CHAR = $(SRC)char/
 CONV = $(SRC)conversion/
