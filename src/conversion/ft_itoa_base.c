@@ -14,7 +14,7 @@
 #include <stdlib.h>
 
 /*
-** ft_itoa_base peut convertir un nombre positif de la base 10 vers n'importe
+** ft_itoa_base() peut convertir un nombre positif de la base 10 vers n'importe
 ** quelle base comprise entre 1 et 38.
 */
 

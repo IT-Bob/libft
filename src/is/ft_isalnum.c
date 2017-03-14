@@ -10,6 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+** ft_isalnum() renvoie 1
+** si le caractère donné en paramètre est un chiffre ou une lettre.
+*/
+
 #include "libft.h"
 
 int	ft_isalnum(int c)

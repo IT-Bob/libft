@@ -10,6 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+** ft_isspace() renvoie 1
+** si le caractère donné en paramètre représente un espace blanc.
+*/
+
 int	ft_isspace(int c)
 {
 	if ((c == '\t') || (c == '\n') || (c == '\v') ||

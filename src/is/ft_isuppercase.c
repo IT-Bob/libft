@@ -10,6 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+** ft_isuppercase() renvoie 1
+** si le caractère donné en paramètre est une lettre majuscule.
+*/
+
 int	ft_isuppercase(char c)
 {
 	if (c >= 'A' && c <= 'Z')

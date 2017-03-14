@@ -10,6 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+** ft_islowercase() renvoie 1
+** si le caractère donné en paramètre est une lettre minuscule.
+*/
+
 int	ft_islowercase(char	c)
 {
 	if (c >= 'a' && c <= 'z')

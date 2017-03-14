@@ -10,6 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+** ft_isprint() renvoie 1
+** si le caractère donné en paramètre est un caractère affichable.
+*/
+
 #include "libft.h"
 
 int	ft_isprint(int c)
