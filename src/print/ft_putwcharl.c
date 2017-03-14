@@ -10,4 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 
+int	ft_putwcharl(long c)
+{
+	return (ft_putwchar(c) + ft_putchar('\n'));
+}

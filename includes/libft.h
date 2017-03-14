@@ -62,13 +62,13 @@ char			*ft_strtrim(char const *s);
 char			**ft_strsplit(char const *s, char c);
 char			*ft_itoa(int n);
 int				ft_putchar(char c);
-void			ft_putstr(char const *str);
-void			ft_putendl(char const *s);
-void			ft_putnbr(int n);
-void			ft_putchar_fd(char c, int fd);
-void			ft_putstr_fd(char const *s, int fd);
-void			ft_putendl_fd(char const *s, int fd);
-void			ft_putnbr_fd(int n, int fd);
+int				ft_putstr(char const *str);
+int				ft_putendl(char const *s);
+int				ft_putnbr(int n);
+int				ft_putchar_fd(char c, int fd);
+int				ft_putstr_fd(char const *s, int fd);
+int				ft_putendl_fd(char const *s, int fd);
+int				ft_putnbr_fd(int n, int fd);
 
 typedef struct	s_list
 {
@@ -86,11 +86,11 @@ t_list			*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 
 int				ft_isspace(int c);
 void			ft_swap(char *a, char *b);
-void			ft_putnbrl(int n);
-void			ft_putnbrs(int n);
+int				ft_putnbrl(int n);
+int				ft_putnbrs(int n);
 int				ft_putcharl(char c);
 int				ft_putchars(char c);
-void			ft_putstrs(char const *str);
+int				ft_putstrs(char const *str);
 int				ft_factorial(int nb);
 int				ft_sqrt(int nb);
 int				ft_count_word(char const *str, char c);
@@ -101,14 +101,18 @@ t_list			*ft_lstaddnew(void const *content, size_t content_size,
 								t_list *list);
 void			ft_delall(t_list *list);
 char			*ft_itoa_base(unsigned long nb, int base);
-void			ft_putnbr_long(long long int n);
+int				ft_putnbr_long(long long int n);
 char			*ft_itoa_long(long long n);
 int				ft_atoi_base(const char *str, int base);
 long long int	ft_pow(int nb, unsigned int pow);
 void			ft_error(char *message, int error);
 int				ft_putwchar(long c);
-void			ft_putwstr(wchar_t *str);
+int				ft_putwstr(wchar_t *str);
 int				ft_islowercase(char	c);
 int				ft_isuppercase(char c);
+int				ft_putwcharl(long c);
+int				ft_putwchars(long c);
+int				ft_putwendl(wchar_t *str);
+int				ft_putwstrs(wchar_t *str);
 
 #endif

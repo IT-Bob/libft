@@ -12,8 +12,7 @@
 
 #include "libft.h"
 
-void	ft_putnbrs(int n)
+int	ft_putnbrs(int n)
 {
-	ft_putnbr(n);
-	ft_putchar(' ');
+	return (ft_putnbr(n) + ft_putchar(' '));
 }

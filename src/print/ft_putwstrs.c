@@ -10,4 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 
+int	ft_putwstrs(wchar_t *str)
+{
+	return (ft_putwstr(str) + ft_putchar(' '));
+}

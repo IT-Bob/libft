@@ -13,8 +13,12 @@
 #include "libft.h"
 #include <wchar.h>
 
-void	ft_putwstr(wchar_t *str)
+int	ft_putwstr(wchar_t *str)
 {
+	int	cmp;
+
+	cmp = 0;
 	while (*str)
-		ft_putwchar(*(str++));
+		cmp += ft_putwchar(*(str++));
+	return (cmp);
 }
