@@ -110,4 +110,5 @@ void			ft_putwchar(long c);
 void			ft_putwstr(wchar_t *str);
 int				ft_islowercase(char	c);
 int				ft_isuppercase(char c);
+
 #endif
