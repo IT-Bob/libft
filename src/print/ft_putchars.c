@@ -12,8 +12,7 @@
 
 #include "libft.h"
 
-void	ft_putchars(char c)
+int	ft_putchars(char c)
 {
-	ft_putchar(c);
-	ft_putchar(' ');
+	return (ft_putchar(c) + ft_putchar(' '));
 }
