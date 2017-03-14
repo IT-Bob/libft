@@ -92,7 +92,7 @@ static char	*find_mask(int size, char *tab)
 ** unicode. Le binaire est ensuite reconverti en décimal pour l'affichage.
 */
 
-void		ft_putwchar(long c)
+int			ft_putwchar(long c)
 {
 	char	*tab;
 	int		ret[4];
@@ -113,5 +113,6 @@ void		ft_putwchar(long c)
 		free(tab);
 	}
 	else
-		ft_putchar(c);
+		return (ft_putchar(c));
+	return (i);
 }
