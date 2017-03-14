@@ -37,6 +37,8 @@ $(MEM)ft_bzero.c $(MEM)ft_memalloc.c $(MEM)ft_memccpy.c $(MEM)ft_memchr.c $(MEM)
 $(PUT)ft_putchar.c $(PUT)ft_putchar_fd.c $(PUT)ft_putcharl.c $(PUT)ft_putchars.c $(PUT)ft_putendl.c $(PUT)ft_putendl_fd.c $(PUT)ft_putnbr.c $(PUT)ft_putnbr_fd.c $(PUT)ft_putnbr_long.c $(PUT)ft_putnbrl.c $(PUT)ft_putnbrs.c $(PUT)ft_putstr.c $(PUT)ft_putstr_fd.c $(PUT)ft_putstrs.c $(PUT)ft_putwchar.c $(PUT)ft_putwstr.c\
 $(SRC)ft_error.c $(SRC)ft_swap.c $(SRC)get_next_line.c\
 $(STRING)ft_count_word.c $(STRING)ft_strcat.c $(STRING)ft_strchr.c $(STRING)ft_strclr.c $(STRING)ft_strcmp.c $(STRING)ft_strcpy.c $(STRING)ft_strdup.c $(STRING)ft_strequ.c $(STRING)ft_strjoin.c $(STRING)ft_strlcat.c $(STRING)ft_strlen.c $(STRING)ft_strmap.c $(STRING)ft_strmapi.c $(STRING)ft_strncat.c $(STRING)ft_strncmp.c $(STRING)ft_strncpy.c $(STRING)ft_strnequ.c $(STRING)ft_strnstr.c $(STRING)ft_strrchr.c $(STRING)ft_strsplit.c $(STRING)ft_strstr.c $(STRING)ft_strsub.c $(STRING)ft_strtrim.c\
+$(IS)ft_isuppercase.c $(IS)ft_islowercase.c\
+#$(STRING)ft_strtoupper.c
 
 PTO = $(PTC:.c=.o)
 

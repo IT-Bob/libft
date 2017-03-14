@@ -108,5 +108,6 @@ long long int	ft_pow(int nb, unsigned int pow);
 void			ft_error(char *message, int error);
 void			ft_putwchar(long c);
 void			ft_putwstr(wchar_t *str);
-
+int				ft_islowercase(char	c);
+int				ft_isuppercase(char c);
 #endif
