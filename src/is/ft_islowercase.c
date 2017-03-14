@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*  ft_islowercase.c                                    :+:      :+:    :+:   */
+/*   ft_islowercase.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
+/*   By: aguerin <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/03/14 10:53:49 by aguerin           #+#    #+#             */
-/*   Updated: 2017/03/14 10:53:49 by aguerin          ###   ########.fr       */
+/*   Created: 2017/03/14 14:43:14 by aguerin           #+#    #+#             */
+/*   Updated: 2017/03/14 14:43:16 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 ** si le caractère donné en paramètre est une lettre minuscule.
 */
 
-int	ft_islowercase(char	c)
+int	ft_islowercase(char c)
 {
 	if (c >= 'a' && c <= 'z')
 		return (1);
