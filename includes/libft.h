@@ -117,5 +117,6 @@ int				ft_putwstrs(wchar_t *str);
 int				ft_putnchar(const char *str, unsigned int n);
 int				ft_putwnchar(wchar_t *str, unsigned int n);
 int				ft_putstrupper(const char *str);
+int				ft_putstrlower(const char *str);
 
 #endif
