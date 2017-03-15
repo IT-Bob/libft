@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_islowercase.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aguerin <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/14 14:43:14 by aguerin           #+#    #+#             */
 /*   Updated: 2017/03/14 14:43:16 by aguerin          ###   ########.fr       */
