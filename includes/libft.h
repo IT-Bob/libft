@@ -114,7 +114,7 @@ int				ft_putwcharl(long c);
 int				ft_putwchars(long c);
 int				ft_putwendl(wchar_t *str);
 int				ft_putwstrs(wchar_t *str);
-int				ft_putnchar(char *str, unsigned int n);
+int				ft_putnchar(const char *str, unsigned int n);
 int				ft_putwnchar(wchar_t *str, unsigned int n);
 
 #endif

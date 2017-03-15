@@ -20,7 +20,7 @@
 
 #include "libft.h"
 
-int	ft_putnchar(char *str, unsigned int n)
+int	ft_putnchar(const char *str, unsigned int n)
 {
 	int	cmp;
 
