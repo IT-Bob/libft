@@ -10,15 +10,16 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 unsigned long	ft_strlen(const char *str)
 {
-	int	cmp;
+	int	i;
 
-	cmp = 0;
-	while (*str)
-	{
-		cmp++;
-		str++;
-	}
-	return (cmp);
+	if (!str)
+		ft_error("Erreur : Chaîne NULL. - ft_strlen()", -1);
+	i = 0;
+	while (str[i])
+		i++;
+	return (i);
 }
