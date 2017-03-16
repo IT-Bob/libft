@@ -1,27 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putxchar.c                                      :+:      :+:    :+:   */
+/*   ft_putxwchar.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/03/17 00:10:25 by aguerin           #+#    #+#             */
-/*   Updated: 2017/03/17 00:10:39 by aguerin          ###   ########.fr       */
+/*   Created: 2017/03/17 00:17:03 by aguerin           #+#    #+#             */
+/*   Updated: 2017/03/17 00:17:05 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-** ft_putxchar() affiche x fois le caractère c.
+** ft_putxwchar() affiche x fois le caractère c.
 */
 
-#include <unistd.h>
+#include "libft.h"
 
-int	ft_putxchar(char c, int x)
+int	ft_putxwchar(wchar_t c, int x)
 {
 	int	i;
 
 	i = -1;
 	while (++i < x)
-		write(1, &c, 1);
+		ft_putwchar(c);
 	return (i);
 }
