@@ -27,6 +27,7 @@ static int	cut(char *tab, int size, int ret[])
 		i -= 8;
 		cpt++;
 	}
+	ft_putnbrl(cpt);
 	return (cpt);
 }
 
