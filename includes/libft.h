@@ -123,4 +123,7 @@ int				ft_putxchar(char c, int x);
 int				ft_putxwchar(wchar_t c, int x);
 int				ft_strwbytlen(wchar_t *str);
 int				ft_charwbytlen(wchar_t c);
+char			*ft_strtolower(char *str);
+char			*ft_strtoupper(char *str);
+
 #endif
