@@ -10,12 +10,12 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
 /*
 ** ft_strtoupper() prend en entrée une chaîne allouée dynamiquement
 ** et transforme les lettres minuscules qui la composent en majuscules.
 */
+
+#include "libft.h"
 
 char	*ft_strtoupper(char *str)
 {
