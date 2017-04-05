@@ -10,6 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+** ft_count_word() renvoie le nombre de mots trouvés dans la chaîne s.
+** Le caractère c est le caractère de séparation des mots.
+*/
+
 unsigned int	ft_count_word(char *s, char c)
 {
 	int	i;

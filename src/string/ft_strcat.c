@@ -10,6 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+** ft_strcat() concatène la chaîne s2 à la suite de s1. s1 doit avoir été
+** allouée dynamiquement.
+*/
+
 char	*ft_strcat(char *s1, const char *s2)
 {
 	int	i;
