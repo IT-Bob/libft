@@ -19,15 +19,16 @@
 */
 
 #include "libft.h"
+#include <unistd.h>
 
 int	ft_putnchar(const char *str, unsigned int n)
 {
-	int	cmp;
+	unsigned int	len;
 
-	if (!str)
-		return (-1);
-	cmp = 0;
-	while (*str && n-- > 0)
-		cmp += ft_putchar(*(str++));
-	return (cmp);
+	len = 0;
+	while (str[len] && len <= n)
+		len++;
+	if (n > len)
+		n = len;
+	return (write(1, str, n));
 }
