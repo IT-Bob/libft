@@ -14,7 +14,7 @@
 ** ft_putnchar() affiche les n premiers caractères de la chaîne str.
 ** Si n est plus grand que la taille de la chaîne, l'affichage s'arrête en fin
 ** de chaîne.
-** Si str est NULL, la fonction quitte en affichant une erreur.
+** Si str est NULL, la fonction quitte en indiquant une erreur.
 ** La fonction renvoie le nombre de caractères affichés.
 */
 
@@ -25,6 +25,8 @@ int	ft_putnchar(const char *str, unsigned int n)
 {
 	unsigned int	len;
 
+	if (!str)
+		return (-1);
 	len = 0;
 	while (str[len] && len <= n)
 		len++;

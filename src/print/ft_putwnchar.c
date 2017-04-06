@@ -14,7 +14,7 @@
 ** ft_putwnchar() affiche les n premiers caractères de la chaîne str.
 ** Si n est plus grand que la taille de la chaîne, l'affichage s'arrête en fin
 ** de chaîne.
-** Si str est NULL, la fonction quitte en affichant une erreur.
+** Si str est NULL, la fonction quitte en indiquant une erreur.
 ** La fonction renvoie le nombre de caractères affichés.
 */
 
