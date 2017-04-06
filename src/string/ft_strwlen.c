@@ -17,7 +17,7 @@ unsigned long	ft_strwlen(wchar_t *str)
 	int	i;
 
 	if (!str)
-		ft_error("Erreur : Chaîne NULL. - ft_strwlen()", -1);
+		return (-1);
 	i = 0;
 	while (str[i])
 		i++;

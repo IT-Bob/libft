@@ -16,6 +16,6 @@
 int	ft_putstr(char const *str)
 {
 	if (!str)
-		ft_error("Erreur : Chaîne NULL. - ft_putstr()", -1);
+		return (-1);
 	return (write(1, str, ft_strlen(str)));
 }

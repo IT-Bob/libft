@@ -17,7 +17,7 @@ unsigned long	ft_strlen(const char *str)
 	int	i;
 
 	if (!str)
-		ft_error("Erreur : Chaîne NULL. - ft_strlen()", -1);
+		return (-1);
 	i = 0;
 	while (str[i])
 		i++;

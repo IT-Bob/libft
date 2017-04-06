@@ -25,7 +25,7 @@ int	ft_putwnchar(wchar_t *str, unsigned int n)
 	int	cmp;
 
 	if (!str)
-		ft_error("Erreur : Chaîne NULL... - ft_putwnchar()", -1);
+		return (-1);
 	cmp = 0;
 	while (*str && n-- > 0)
 		cmp += ft_putwchar(*(str++));

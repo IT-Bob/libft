@@ -18,7 +18,7 @@ int	ft_putwstr(wchar_t *str)
 	int	cmp;
 
 	if (!str)
-		ft_error("Erreur : Chaîne NULL. - ft_putwstr()", -1);
+		return (-1);
 	cmp = 0;
 	while (*str)
 		cmp += ft_putwchar(*(str++));

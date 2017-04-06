@@ -19,12 +19,19 @@
 
 #include "libft.h"
 
-static void	error_verification(const char *str, int base)
+static int	error_verification(const char *str, int base)
 {
 	if (base < 2 || base > 37)
-		ft_error("Erreur : base incorrecte - ft_atoi_base", -1);
+	{
+		ft_putendl("Erreur : base incorrecte - ft_atoi_base");
+		return (-1);
+	}
 	if (!str)
-		ft_error("Erreur : chaîne (null) - ft_atoi_base", -1);
+	{
+		ft_putendl("Erreur : chaîne (null) - ft_atoi_base");
+		return (-1);
+	}
+	return (0);
 }
 
 static int	conv_dec(const char c)
@@ -35,7 +42,7 @@ static int	conv_dec(const char c)
 		return (c - 55);
 	if (c >= 'a' && c <= 'z')
 		return (c - 87);
-	ft_error("Erreur : problème de formatage de la chaîne - ft_atoi_base", -1);
+	ft_putendl("Erreur : problème de formatage de la chaîne - ft_atoi_base");
 	return (-1);
 }
 
@@ -45,7 +52,8 @@ int			ft_atoi_base(const char *str, int base)
 	int	nb;
 	int	power;
 
-	error_verification(str, base);
+	if (error_verification(str, base))
+		return (-1);
 	i = 0;
 	nb = 0;
 	if (base == 10)

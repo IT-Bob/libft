@@ -105,7 +105,6 @@ int				ft_putnbr_long(long long int n);
 char			*ft_itoa_long(long long n);
 int				ft_atoi_base(const char *str, int base);
 long long int	ft_pow(int nb, unsigned int pow);
-void			ft_error(char *message, int error);
 int				ft_putwchar(long c);
 int				ft_putwstr(wchar_t *str);
 int				ft_islowercase(char	c);

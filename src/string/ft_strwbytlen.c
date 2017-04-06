@@ -21,7 +21,7 @@ int	ft_strwbytlen(wchar_t *str)
 	int	i;
 
 	if (!str)
-		ft_error("Erreur : Chaîne NULL. - ft_bytlen()", -1);
+		return (-1);
 	i = 0;
 	while (*str)
 		i += ft_charwbytlen(*(str++));

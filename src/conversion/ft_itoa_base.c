@@ -47,7 +47,7 @@ char		*ft_itoa_base(unsigned long nb, int base)
 	if (base < 2 || base > 37)
 	{
 		ft_putendl("Base incorrect...");
-		exit(0);
+		return (NULL);
 	}
 	nbr = NULL;
 	if (nb == 0)

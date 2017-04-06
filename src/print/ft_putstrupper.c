@@ -18,7 +18,7 @@ int	ft_putstrupper(const char *str)
 	int	cmp;
 
 	if (!str)
-		ft_error("Erreur : Chaîne NULL. - ft_putstrlower()", -1);
+		return (-1);
 	i = 0;
 	cmp = 0;
 	while (str[i])

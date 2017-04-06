@@ -82,7 +82,6 @@ static char	*find_mask(int size, char *tab)
 		fill_new(new, tab, length, size);
 		return (new);
 	}
-	ft_error("Erreur d'allocation... - create_table", -1);
 	return (NULL);
 }
 
@@ -101,16 +100,19 @@ int			ft_putwchar(long c)
 
 	i = 0;
 	if (c < -2147483648 || c > 2147483647)
-		ft_error("Erreur : Valeur incorrect - ft_putwchar.", -1);
+		ft_putendl("Erreur : Valeur incorrect - ft_putwchar.");
 	if (c > 127)
 	{
 		if (!(tab = ft_itoa_base(c, 2)))
-			ft_error("Erreur de conversion - ft_putwchar", -1);
-		tab = find_mask(ft_strlen(tab), tab);
-		nb_oct = cut(tab, ft_strlen(tab), ret);
-		while (i < nb_oct)
-			ft_putchar(ret[i++]);
-		free(tab);
+			ft_putendl("Erreur de conversion - ft_putwchar");
+		else
+		{
+			tab = find_mask(ft_strlen(tab), tab);
+			nb_oct = cut(tab, ft_strlen(tab), ret);
+			while (i < nb_oct)
+				ft_putchar(ret[i++]);
+			free(tab);
+		}
 	}
 	else
 		return (ft_putchar(c));

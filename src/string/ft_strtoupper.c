@@ -22,7 +22,7 @@ char	*ft_strtoupper(char *str)
 	int	i;
 
 	if (!str)
-		ft_error("Erreur : Chaîne NULL. - ft_strtoupper()", -1);
+		return (NULL);
 	i = -1;
 	while (str[++i])
 		str[i] = ft_toupper(str[i]);
