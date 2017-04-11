@@ -78,7 +78,7 @@ static char	*find_mask(int size, char *tab)
 		else if (length == 24)
 			ft_strcpy(new, "1110xxxx10xxxxxx10xxxxxx");
 		else
-			ft_strcpy(new, "11110xxx10xxxxxx10xxxxxx10000000");
+			ft_strcpy(new, "11110xxx10xxxxxx10xxxxxx10xxxxxx");
 		fill_new(new, tab, length, size);
 		return (new);
 	}
