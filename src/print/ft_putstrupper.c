@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstrupper.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aguerin <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/16 10:22:59 by aguerin           #+#    #+#             */
 /*   Updated: 2017/03/16 10:23:00 by aguerin          ###   ########.fr       */
