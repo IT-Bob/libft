@@ -124,5 +124,6 @@ int				ft_strwbytlen(wchar_t *str);
 int				ft_charwbytlen(wchar_t c);
 char			*ft_strtolower(char *str);
 char			*ft_strtoupper(char *str);
+int				ft_is_valid_char(char *valid, char c);
 
 #endif
