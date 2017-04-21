@@ -35,7 +35,7 @@ PTC =\
 $(CHAR)ft_charwbytlen.c $(CHAR)ft_tolower.c $(CHAR)ft_toupper.c\
 $(CONV)ft_atoi.c $(CONV)ft_atoi_base.c $(CONV)ft_itoa.c $(CONV)ft_itoa_base.c $(CONV)ft_itoa_long.c\
 $(IS)ft_isalnum.c $(IS)ft_isalpha.c $(IS)ft_isascii.c $(IS)ft_isdigit.c $(IS)ft_islowercase.c $(IS)ft_isprint.c $(IS)ft_isspace.c $(IS)ft_isuppercase.c $(IS)ft_is_valid_char.c\
-$(LST)ft_lstadd.c $(LST)ft_lstaddend.c $(LST)ft_lstaddnew.c $(LST)ft_lstdel.c $(LST)ft_lstdelall.c $(LST)ft_lstdelone.c $(LST)ft_lstdelonejoin.c $(LST)ft_lstiter.c $(LST)ft_lstmap.c $(LST)ft_lstnew.c\
+$(LST)ft_lstadd.c $(LST)ft_lstaddapha.c $(LST)ft_lstaddend.c $(LST)ft_lstaddnew.c $(LST)ft_lstdel.c $(LST)ft_lstdelall.c $(LST)ft_lstdelone.c $(LST)ft_lstdelonejoin.c $(LST)ft_lstiter.c $(LST)ft_lstmap.c $(LST)ft_lstnew.c\
 $(MATH)ft_factorial.c $(MATH)ft_pow.c $(MATH)ft_sqrt.c\
 $(MEM)ft_bzero.c $(MEM)ft_memalloc.c $(MEM)ft_memccpy.c $(MEM)ft_memchr.c $(MEM)ft_memcmp.c $(MEM)ft_memcpy.c $(MEM)ft_memdel.c $(MEM)ft_memmove.c $(MEM)ft_memset.c $(MEM)ft_strdel.c $(MEM)ft_strfreejoin.c $(MEM)ft_striter.c $(MEM)ft_striteri.c $(MEM)ft_strnew.c\
 $(PUT)ft_putchar.c $(PUT)ft_putchar_fd.c $(PUT)ft_putcharl.c $(PUT)ft_putchars.c $(PUT)ft_putendl.c $(PUT)ft_putendl_fd.c $(PUT)ft_putnbr.c $(PUT)ft_putnbr_fd.c $(PUT)ft_putnbr_long.c $(PUT)ft_putnbrl.c $(PUT)ft_putnbrs.c $(PUT)ft_putnchar.c $(PUT)ft_putstr.c $(PUT)ft_putstrlower.c $(PUT)ft_putstr_fd.c $(PUT)ft_putstrs.c $(PUT)ft_putstrupper.c $(PUT)ft_putwchar.c $(PUT)ft_putwcharl.c $(PUT)ft_putwchars.c $(PUT)ft_putwendl.c $(PUT)ft_putwnchar.c $(PUT)ft_putwstr.c $(PUT)ft_putwstrs.c $(PUT)ft_putxchar.c $(PUT)ft_putxwchar.c\
