@@ -99,7 +99,7 @@ char			*ft_strfreejoin(char *s1, char *s2);
 void			ft_lstaddend(t_list **alst, t_list *new);
 t_list			*ft_lstaddnew(void const *content, size_t content_size,
 								t_list *list);
-void			ft_delall(t_list *list);
+void			ft_lstdelall(t_list *list);
 char			*ft_itoa_base(unsigned long nb, int base);
 int				ft_putnbr_long(long long int n);
 char			*ft_itoa_long(long long n);
