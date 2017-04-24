@@ -100,7 +100,7 @@ void			ft_lstaddend(t_list **alst, t_list *new);
 t_list			*ft_lstaddnew(void const *content, size_t content_size,
 								t_list *list);
 void			ft_lstdelall(t_list *list);
-void			ft_lstaddalpha(t_list **alst, t_list *new);
+t_list			*ft_lstaddalpha(t_list **alst, t_list *new);
 
 char			*ft_itoa_base(unsigned long nb, int base);
 int				ft_putnbr_long(long long int n);
