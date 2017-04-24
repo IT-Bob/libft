@@ -21,24 +21,15 @@
 t_list		*ft_lstdelonejoin(int content_size, t_list *list)
 {
 	t_list *new;
-	t_list *suppr;
 
 	new = list;
-	if ((int)list->content_size == content_size)
+	if (new)
 	{
 		list = list->next;
-		free(new->content);
+		if (new->content_size && new->content_size == (size_t)content_size)
+			free(new->content);
 		free(new);
 		new = NULL;
-	}
-	else
-	{
-		while ((int)new->next->content_size != content_size && new)
-			new = new->next;
-		suppr = new->next;
-		new->next = new->next->next;
-		free(suppr);
-		suppr = NULL;
 	}
 	return (list);
 }
