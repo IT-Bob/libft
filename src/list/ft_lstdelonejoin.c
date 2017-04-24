@@ -27,6 +27,7 @@ t_list		*ft_lstdelonejoin(int content_size, t_list *list)
 	if ((int)list->content_size == content_size)
 	{
 		list = list->next;
+		free(new->content);
 		free(new);
 		new = NULL;
 	}
