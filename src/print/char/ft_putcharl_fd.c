@@ -15,5 +15,5 @@
 
 int	ft_putcharl_fd(char c, int fd)
 {
-	return (ft_putchar_fd(fd, c), ft_putchar_fd(fd, '\n'));
+	return (ft_putchar_fd(fd, c) + ft_putchar_fd(fd, '\n'));
 }
