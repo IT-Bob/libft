@@ -10,6 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+** ft_lstiter_reverse() applique la fonction f sur chaque maillon de la liste
+** lst en commençant par le dernier élement.
+*/
+
 #include "libft.h"
 
 void	ft_lstiter_reverse(t_list *lst, void (*f)(t_list *elem))
