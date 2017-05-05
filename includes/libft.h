@@ -6,7 +6,7 @@
 /*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 09:51:57 by aguerin           #+#    #+#             */
-/*   Updated: 2017/03/08 13:43:38 by aguerin          ###   ########.fr       */
+/*   Updated: 2017/05/05 17:00:18 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -102,7 +102,7 @@ t_list			*ft_lstaddnew(void const *content, size_t content_size,
 void			ft_lstdelall(t_list *list);
 t_list			*ft_lstaddalpha(t_list **alst, t_list *new);
 void			ft_lstiter_reverse(t_list *lst, void (*f)(t_list *elem));
-
+void			fill_tab(int tab[], unsigned int size, int value);
 int				ft_putcharl_fd(char c, int fd);
 
 char			*ft_itoa_base(unsigned long nb, int base);
