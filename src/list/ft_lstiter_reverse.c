@@ -6,7 +6,7 @@
 /*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/26 13:36:11 by aguerin           #+#    #+#             */
-/*   Updated: 2017/04/26 13:36:13 by aguerin          ###   ########.fr       */
+/*   Updated: 2017/05/09 19:41:09 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,7 @@ void	ft_lstiter_reverse(t_list *lst, void (*f)(t_list *elem))
 {
 	if (lst)
 	{
-		if (lst->next)
-			ft_lstiter_reverse(lst->next, f);
+		ft_lstiter_reverse(lst->next, f);
 		f(lst);
 	}
 }
