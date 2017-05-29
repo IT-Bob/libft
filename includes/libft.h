@@ -6,7 +6,7 @@
 /*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 09:51:57 by aguerin           #+#    #+#             */
-/*   Updated: 2017/05/22 18:41:32 by aguerin          ###   ########.fr       */
+/*   Updated: 2017/05/29 13:45:04 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -131,5 +131,7 @@ int				ft_charwbytlen(wchar_t c);
 char			*ft_strtolower(char *str);
 char			*ft_strtoupper(char *str);
 int				ft_is_valid_char(char *valid, char c);
+
+void			ft_perror(const char *message, const int value);
 
 #endif
