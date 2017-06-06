@@ -6,7 +6,7 @@
 /*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/15 10:44:33 by aguerin           #+#    #+#             */
-/*   Updated: 2017/06/06 17:49:47 by aguerin          ###   ########.fr       */
+/*   Updated: 2017/06/06 18:00:32 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,5 +33,5 @@ int	ft_putnstrs(const char *str, unsigned int n)
 		len++;
 	if (n > len)
 		n = len;
-	return (write(1, str, n));
+	return (write(1, str, n) + ft_putchar(' '));
 }
