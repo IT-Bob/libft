@@ -6,7 +6,7 @@
 /*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 09:51:57 by aguerin           #+#    #+#             */
-/*   Updated: 2017/06/06 17:42:35 by aguerin          ###   ########.fr       */
+/*   Updated: 2017/06/06 17:50:43 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -120,6 +120,7 @@ int				ft_putwchars(long c);
 int				ft_putwendl(wchar_t *str);
 int				ft_putwstrs(wchar_t *str);
 int				ft_putnstr(const char *str, unsigned int n);
+int				ft_putnstrs(const char *str, unsigned int n);
 int				ft_putwnchar(wchar_t *str, unsigned int n);
 int				ft_putstrupper(const char *str);
 int				ft_putstrlower(const char *str);
