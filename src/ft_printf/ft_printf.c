@@ -6,7 +6,7 @@
 /*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/15 12:59:35 by aguerin           #+#    #+#             */
-/*   Updated: 2017/03/15 12:59:59 by aguerin          ###   ########.fr       */
+/*   Updated: 2017/06/06 17:44:47 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ static int	print(const char *format, va_list va)
 	{
 		if (format[i] == '%')
 		{
-			cmp += ft_putnchar(&format[begin], i - begin);
+			cmp += ft_putnstr(&format[begin], i - begin);
 			if ((ret = find_conversion(&format[i], va, &cmp)) == -1)
 				return (-1);
 			i += ret;
@@ -35,7 +35,7 @@ static int	print(const char *format, va_list va)
 		}
 	}
 	if (begin != i)
-		cmp += ft_putnchar(&format[begin], i - begin);
+		cmp += ft_putnstr(&format[begin], i - begin);
 	return (cmp);
 }
 
