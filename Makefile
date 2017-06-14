@@ -1,3 +1,15 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2016/11/04 10:07:37 by aguerin           #+#    #+#              #
+#    Updated: 2017/06/06 17:50:17 by aguerin          ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
 NAME = libft.a
 
 # Options de compilations
@@ -34,9 +46,6 @@ TAB_FILE = fill_tab.c
 FT_PRINTF_FILE = conversion.c corrections.c find.c ft_printf.c length_modifier.c print.c
 FT_PRINTF_C_FILE = conversion_c.c conversion_c_cap.c conversion_d.c conversion_o.c conversion_p.c conversion_percent.c conversion_s.c conversion_s_cap.c conversion_u.c conversion_x.c
 
-FT_PRINTF_PATH = $(addprefix $(SRC_PATH), ft_printf/)
-FT_PRINTF_C_PATH = $(addprefix $(FT_PRINTF_PATH), conversions/)
-
 # Ajout des chemins
 SRC = $(addprefix $(SRC_PATH), $(SRC_FILE))\
 $(addprefix $(SRC_PATH)char/, $(CHAR_FILE))\
@@ -53,13 +62,16 @@ $(addprefix $(PRINT_STR_PATH), $(PRINT_STR_FILE))\
 $(addprefix $(SRC_PATH)string/, $(STR_FILE))\
 $(addprefix $(SRC_PATH)tab/, $(TAB_FILE))
 
-OBJ = $(SRC:.c=.o)
+FT_PRINTF_PATH = $(addprefix $(SRC_PATH), ft_printf/)
+FT_PRINTF_C_PATH = $(addprefix $(FT_PRINTF_PATH), conversions/)
 
 all: $(NAME)
 
 $(NAME): $(OBJ)
 	ar rc $(NAME) $(OBJ)
 	ranlib $(NAME)
+
+OBJ = $(SRC:.c=.o)
 
 # Permet de recompiler si un header est modifié
 $(OBJ): $(INC)
