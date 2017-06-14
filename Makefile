@@ -65,13 +65,13 @@ $(addprefix $(SRC_PATH)tab/, $(TAB_FILE))
 FT_PRINTF_PATH = $(addprefix $(SRC_PATH), ft_printf/)
 FT_PRINTF_C_PATH = $(addprefix $(FT_PRINTF_PATH), conversions/)
 
+OBJ = $(SRC:.c=.o)
+
 all: $(NAME)
 
 $(NAME): $(OBJ)
 	ar rc $(NAME) $(OBJ)
 	ranlib $(NAME)
-
-OBJ = $(SRC:.c=.o)
 
 # Permet de recompiler si un header est modifié
 $(OBJ): $(INC)
