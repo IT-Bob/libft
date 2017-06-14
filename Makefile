@@ -13,7 +13,11 @@
 NAME = libft.a
 CC = gcc
 CFLAGS = -Wall -Werror -Wextra
-CPPFLAGS = -Iincludes
+CPPFLAGS = -I$(INC)
+
+# Headers
+INC = includes/
+HEAD = $(INC)libft.h $(INC)get_next_line.h $(INC)ft_printf.h
 
 # Sous-dossiers où sont placés les fichiers
 SRC = src/
@@ -57,6 +61,8 @@ all: $(NAME)
 $(NAME): $(PTO)
 	ar rc $(NAME) $(PTO)
 	ranlib $(NAME)
+
+$(PTO): $(HEAD)
 
 clean:
 	rm -f $(PTO)
