@@ -73,19 +73,21 @@ INC = $(addprefix $(INC_PATH), $(INC_FILE))
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	ar rc $(NAME) $(OBJ)
-	ranlib $(NAME)
+	@echo "Création de la bibliothèque $(NAME)"
+	@ar rc $(NAME) $(OBJ)
+	@echo "Création de l'index pour $(NAME)"
+	@ranlib $(NAME)
 
 ## Permet de recompiler si un header est modifié
 $(OBJ): $(INC)
 
 clean:
 	@rm -f $(OBJ)
-	@echo "	suppression des fichiers objets"
+	@echo "suppression des fichiers objets"
 
 fclean: clean
 	@rm -f $(NAME)
-	@echo "	suppression de la bibliothèque"
+	@echo "suppression de la bibliothèque"
 
 re: fclean all
 
