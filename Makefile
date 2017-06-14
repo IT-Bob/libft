@@ -77,10 +77,12 @@ $(NAME): $(OBJ)
 $(OBJ): $(INC)
 
 clean:
-	rm -f $(OBJ)
+	@rm -f $(OBJ)
+	@echo "	suppression des fichiers objets"
 
 fclean: clean
-	rm -f $(NAME)
+	@rm -f $(NAME)
+	@echo "	suppression de la bibliothèque"
 
 re: fclean all
 
