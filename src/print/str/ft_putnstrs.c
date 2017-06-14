@@ -6,12 +6,12 @@
 /*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/15 10:44:33 by aguerin           #+#    #+#             */
-/*   Updated: 2017/06/07 16:42:23 by aguerin          ###   ########.fr       */
+/*   Updated: 2017/06/06 18:00:32 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-** ft_putnstrs() affiche les n premiers caractères de la chaîne str suivi d'un
+** ft_putnstrs() affiche les n premiers caractères de la chaîne str suivi d'un 
 ** espace.
 ** Si n est plus grand que la taille de la chaîne, l'affichage s'arrête en fin
 ** de chaîne.
