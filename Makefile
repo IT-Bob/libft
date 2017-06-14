@@ -14,7 +14,7 @@
 NAME = libft.a
 
 # Options de compilation
-CC = gcc
+CC = @gcc
 CFLAGS = -Wall -Werror -Wextra
 CPPFLAGS = -I$(INC_PATH)
 
@@ -82,12 +82,12 @@ $(NAME): $(OBJ)
 $(OBJ): $(INC)
 
 clean:
+	@echo "Suppression des fichiers objets de libft"
 	@rm -f $(OBJ)
-	@echo "suppression des fichiers objets"
 
 fclean: clean
+	@echo "Suppression de la bibliothèque $(NAME)"
 	@rm -f $(NAME)
-	@echo "suppression de la bibliothèque"
 
 re: fclean all
 
