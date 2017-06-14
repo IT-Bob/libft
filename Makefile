@@ -87,7 +87,7 @@ fclean: clean
 re: fclean all
 
 norme:
-	@norminette includes/*.h
-	@norminette src/**.c
+	@norminette includes/
+	@norminette src/
 
 .PHONY: all clean fclean re
