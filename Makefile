@@ -73,9 +73,9 @@ INC = $(addprefix $(INC_PATH), $(INC_FILE))
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	@echo "Création de la bibliothèque $(NAME)"
+	@echo "$(MAGEN)Création de la bibliothèque $(NAME)"
 	@ar rc $(NAME) $(OBJ)
-	@echo "Création de l'index pour $(NAME)"
+	@echo "Création de l'index pour $(NAME)$(RESET)"
 	@ranlib $(NAME)
 
 ## Permet de recompiler si un header est modifié
@@ -94,5 +94,17 @@ re: fclean all
 norme:
 	@norminette includes/
 	@norminette src/
+
+# Couleurs
+
+RESET = \033[0m
+BLANC = \033[37m
+BLEU  = \033[34m
+CYAN  = \033[36m
+JAUNE = \033[33m
+MAGEN = \033[35m
+NOIR  = \033[30m
+ROUGE = \033[31m
+VERT  = \033[32m
 
 .PHONY: all clean fclean re
