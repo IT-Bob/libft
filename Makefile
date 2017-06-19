@@ -73,7 +73,7 @@ INC = $(addprefix $(INC_PATH), $(INC_FILE))
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	@echo "$(MAGEN)Création de la bibliothèque $(NAME)"
+	@echo "$(ROUGEC)Création de la bibliothèque $(NAME)"
 	@ar rc $(NAME) $(OBJ)
 	@echo "Création de l'index pour $(NAME)$(RESET)"
 	@ranlib $(NAME)
@@ -105,6 +105,7 @@ JAUNE = \033[33m
 MAGEN = \033[35m
 NOIR  = \033[30m
 ROUGE = \033[31m
+ROUGEC = \033[1;31m
 VERT  = \033[32m
 
 .PHONY: all clean fclean re
