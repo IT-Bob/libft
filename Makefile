@@ -6,7 +6,7 @@
 #    By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/04 10:07:37 by aguerin           #+#    #+#              #
-#    Updated: 2017/06/06 17:50:17 by aguerin          ###   ########.fr        #
+#    Updated: 2017/06/20 13:30:54 by aguerin          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -92,6 +92,7 @@ fclean: clean
 re: fclean all
 
 norme:
+	@echo "$(MAGEN)Norme pour libft$(RESET)"
 	@norminette includes/
 	@norminette src/
 
