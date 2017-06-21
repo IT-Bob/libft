@@ -6,7 +6,7 @@
 /*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 09:51:57 by aguerin           #+#    #+#             */
-/*   Updated: 2017/06/21 12:41:12 by aguerin          ###   ########.fr       */
+/*   Updated: 2017/06/21 14:18:45 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -100,7 +100,6 @@ char			*ft_strfreejoin(char *s1, char *s2);
 void			ft_lstaddend(t_list **alst, t_list *new);
 t_list			*ft_lstaddnew(void const *content, size_t content_size,
 								t_list *list);
-void			ft_lstdelall(t_list *list);
 t_list			*ft_lstaddalpha(t_list **alst, t_list *new);
 void			ft_lstiter_reverse(t_list *lst, void (*f)(t_list *elem));
 void			fill_tab(int tab[], unsigned int size, int value);

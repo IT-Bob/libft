@@ -6,12 +6,17 @@
 /*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/02 11:07:59 by aguerin           #+#    #+#             */
-/*   Updated: 2017/03/02 11:08:01 by aguerin          ###   ########.fr       */
+/*   Updated: 2017/06/21 14:12:36 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
+
+/*
+** ft_itoa_long() prend en entrée un nombre sous forme d'entier (int long)
+** et renvoie sa représentation dans une chaîne de caractères.
+*/
 
 static char	*ft_zero(char *nbr)
 {

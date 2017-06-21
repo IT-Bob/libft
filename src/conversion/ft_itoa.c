@@ -6,12 +6,17 @@
 /*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/15 16:55:33 by aguerin           #+#    #+#             */
-/*   Updated: 2016/11/17 11:43:01 by aguerin          ###   ########.fr       */
+/*   Updated: 2017/06/21 14:12:00 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
+
+/*
+** ft_itoa() prend en entrée un nombre sous forme d'entier
+** et renvoie sa représentation dans une chaîne de caractères.
+*/
 
 static char	*ft_zero(char *nbr)
 {
