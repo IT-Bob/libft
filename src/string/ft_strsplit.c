@@ -5,63 +5,45 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/11/10 14:43:08 by aguerin           #+#    #+#             */
-/*   Updated: 2016/11/21 10:53:28 by aguerin          ###   ########.fr       */
+/*   Created: 2017/06/21 12:38:54 by aguerin           #+#    #+#             */
+/*   Updated: 2017/06/21 12:41:58 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
-static int	ft_word(char const *s, char c)
+static char	**split(char **new, size_t size, const char *str, char c)
 {
-	int i;
+	char	*begin;
+	char	*end;
+	size_t	i;
 
 	i = 0;
-	while (s[i] && s[i] != c)
-		i++;
-	return (i);
+	begin = (char*)str;
+	end = NULL;
+	while (begin && i < size)
+	{
+		if ((end = ft_strchr(begin, c)) && end > begin)
+			new[i++] = ft_strsub(begin, 0, end - begin);
+		else if (end > begin || !end)
+			new[i++] = ft_strdup(begin);
+		begin = (end ? end + 1 : end);
+	}
+	return (new);
 }
 
-static char	**ft_split(char **sstr, char const *s, char c)
+char		**ft_strsplit(const char *str, char c)
 {
-	int i;
-	int j;
-	int end;
+	char	**new;
+	size_t	size;
 
-	i = 0;
-	j = 0;
-	end = 0;
-	while (s[i] && j != ft_count_word(s, c))
+	new = NULL;
+	if (str)
 	{
-		if (s[i] != c)
-		{
-			end = ft_word(&s[i], c);
-			if (!(sstr[j] = (char*)malloc(sizeof(char) * (end + 1))))
-				return (NULL);
-			sstr[j] = ft_strsub(s, i, end);
-			i += end;
-			j++;
-		}
-		i++;
+		size = ft_count_word(str, c);
+		if (!(new = (char**)ft_memalloc(sizeof(char*) * (size + 1))))
+			ft_perror("Erreur d'allocation", -1);
+		new = split(new, size, str, c);
 	}
-	return (sstr);
-}
-
-char		**ft_strsplit(char const *s, char c)
-{
-	int		nbword;
-	char	**sstr;
-
-	if (s)
-	{
-		nbword = ft_count_word(s, c);
-		sstr = (char**)malloc(sizeof(char*) * nbword + 1);
-		if (sstr)
-		{
-			sstr[nbword] = NULL;
-			return (ft_split(sstr, s, c));
-		}
-	}
-	return (NULL);
+	return (new);
 }
