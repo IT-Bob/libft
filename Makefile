@@ -6,7 +6,7 @@
 #    By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/04 10:07:37 by aguerin           #+#    #+#              #
-#    Updated: 2017/06/21 11:03:30 by aguerin          ###   ########.fr        #
+#    Updated: 2017/06/21 12:45:21 by aguerin          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -91,10 +91,19 @@ fclean: clean
 
 re: fclean all
 
-norme: fclean
-	@echo "$(MAGEN)Norme pour libft$(RESET)"
+# Règles pour la norme
+normeinc:
+	@echo "$(MAGEN)Norme des headers$(RESET)"
 	@norminette includes/
+
+normesrc:
+	@echo "$(MAGEN)Norme des sources$(RESET)"
 	@norminette src/
+
+msg:
+	@echo "$(MAGEN)Norme pour libft :$(RESET)"
+
+norme: fclean msg normeinc normesrc
 
 # Couleurs
 
