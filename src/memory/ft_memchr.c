@@ -6,11 +6,15 @@
 /*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/09 17:12:46 by aguerin           #+#    #+#             */
-/*   Updated: 2016/11/18 18:09:16 by aguerin          ###   ########.fr       */
+/*   Updated: 2017/06/21 14:33:19 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
+
+/*
+** ft_memchr() renvoie le pointeur sur c trouvé dans s.
+*/
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {

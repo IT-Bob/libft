@@ -6,13 +6,18 @@
 /*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/16 17:38:07 by aguerin           #+#    #+#             */
-/*   Updated: 2016/11/17 17:37:10 by aguerin          ###   ########.fr       */
+/*   Updated: 2017/06/21 14:27:30 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
 #include <string.h>
+
+/*
+** ft_lstnew() alloue la mémoire pour un maillon t_list
+** et y copie les paramètres donnés.
+*/
 
 t_list	*ft_lstnew(void const *content, size_t content_size)
 {

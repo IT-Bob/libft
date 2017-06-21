@@ -6,9 +6,13 @@
 /*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/03 10:54:50 by aguerin           #+#    #+#             */
-/*   Updated: 2016/11/03 19:46:55 by aguerin          ###   ########.fr       */
+/*   Updated: 2017/06/21 14:28:54 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** ft_sqrt() renvoie la racine de nb.
+*/
 
 int		ft_sqrt(int nb)
 {

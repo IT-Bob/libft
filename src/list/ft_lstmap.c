@@ -6,11 +6,16 @@
 /*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/18 11:46:13 by aguerin           #+#    #+#             */
-/*   Updated: 2017/01/30 12:16:36 by aguerin          ###   ########.fr       */
+/*   Updated: 2017/06/21 14:26:13 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** ft_lstmap() applique la fonction f sur chaque maillon de la liste lst et crée
+** une liste à partir des retours de cette fonction.
+*/
 
 t_list		*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
 {

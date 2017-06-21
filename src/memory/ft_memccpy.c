@@ -6,12 +6,16 @@
 /*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/08 18:06:45 by aguerin           #+#    #+#             */
-/*   Updated: 2016/11/18 20:13:30 by aguerin          ###   ########.fr       */
+/*   Updated: 2017/06/21 14:32:30 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 #include "libft.h"
+
+/*
+** ft_memccpy() copie la mémoire de src dans dst jusqu'au caractère c.
+*/
 
 void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 {

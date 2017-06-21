@@ -6,9 +6,13 @@
 /*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/21 10:12:20 by aguerin           #+#    #+#             */
-/*   Updated: 2016/11/21 10:12:24 by aguerin          ###   ########.fr       */
+/*   Updated: 2017/06/21 14:28:01 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** ft_factorial() renvoie la factorielle de nb.
+*/
 
 int	ft_factorial(int nb)
 {

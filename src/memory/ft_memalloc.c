@@ -6,13 +6,17 @@
 /*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/09 18:22:05 by aguerin           #+#    #+#             */
-/*   Updated: 2016/11/16 15:26:53 by aguerin          ###   ########.fr       */
+/*   Updated: 2017/06/21 14:31:06 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 #include <stdlib.h>
 #include "libft.h"
+
+/*
+** ft_memalloc() alloue la mémoire et remplie la zone allouée avec des 0.
+*/
 
 void	*ft_memalloc(size_t size)
 {

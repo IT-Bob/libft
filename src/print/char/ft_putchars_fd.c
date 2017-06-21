@@ -1,28 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_putchars_fd.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/11/08 16:26:28 by aguerin           #+#    #+#             */
-/*   Updated: 2017/06/21 14:30:21 by aguerin          ###   ########.fr       */
+/*   Created: 2017/04/26 11:26:38 by aguerin           #+#    #+#             */
+/*   Updated: 2017/06/21 14:37:50 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include <unistd.h>
+#include "libft.h"
 
 /*
-** ft_bzero() remplie la zone mémoire de s avec 0.
+** ft_putchars_fd() affiche un caractère suivi d'un espace sur le fd indiqué
+** et renvoie le nombre de caractères affichés.
 */
 
-void	ft_bzero(void *s, size_t n)
+int	ft_putchars_fd(char c, int fd)
 {
-	size_t			i;
-	unsigned char	*s1;
-
-	s1 = s;
-	i = 0;
-	while (i < n)
-		s1[i++] = 0;
+	return (ft_putchar_fd(fd, c) + ft_putchar_fd(fd, ' '));
 }
