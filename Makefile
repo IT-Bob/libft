@@ -6,7 +6,7 @@
 #    By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/04 10:07:37 by aguerin           #+#    #+#              #
-#    Updated: 2017/06/21 14:38:10 by aguerin          ###   ########.fr        #
+#    Updated: 2017/06/21 15:04:40 by aguerin          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,7 +32,7 @@ CONV_FILE = ft_atoi.c ft_atoi_base.c ft_itoa.c ft_itoa_base.c ft_itoa_long.c
 IS_FILE = ft_is_valid_char.c ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c ft_islowercase.c ft_isprint.c ft_isspace.c ft_isuppercase.c
 LIST_FILE = ft_lstadd.c ft_lstaddapha.c ft_lstaddend.c ft_lstaddnew.c ft_lstdel.c ft_lstdelone.c ft_lstdelonejoin.c ft_lstiter.c ft_lstiter_reverse.c ft_lstmap.c ft_lstnew.c
 MATH_FILE = ft_factorial.c ft_pow.c ft_sqrt.c
-MEM_FILE = ft_bzero.c ft_memalloc.c ft_memccpy.c ft_memchr.c ft_memcmp.c ft_memcpy.c ft_memdel.c ft_memmove.c ft_memset.c ft_strdel.c ft_strfreejoin.c ft_striter.c ft_striteri.c ft_strnew.c
+MEM_FILE = ft_bzero.c ft_memalloc.c ft_memccpy.c ft_memchr.c ft_memcmp.c ft_memcpy.c ft_memdel.c ft_memmove.c ft_memset.c ft_strdel.c ft_strdeldouble.c ft_strfreejoin.c ft_striter.c ft_striteri.c ft_strnew.c
 PRINT_CHAR_FILE = ft_putchar.c ft_putchar_fd.c ft_putcharl.c ft_putcharl_fd.c ft_putchars.c ft_putchars_fd.c ft_putwchar.c ft_putwcharl.c ft_putwchars.c ft_putwnchar.c ft_putxchar.c ft_putxwchar.c
 PRINT_NBR_FILE = ft_putnbr.c ft_putnbr_fd.c ft_putnbr_long.c ft_putnbrl.c ft_putnbrs.c
 PRINT_STR_FILE = ft_perror.c ft_putendl.c ft_putendl_fd.c ft_putnstr.c ft_putnstrs.c ft_putstr.c ft_putstr_fd.c ft_putstrlower.c ft_putstrs.c ft_putstrupper.c ft_putwendl.c ft_putwstr.c ft_putwstrs.c

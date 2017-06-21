@@ -6,7 +6,7 @@
 /*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 09:51:57 by aguerin           #+#    #+#             */
-/*   Updated: 2017/06/21 14:18:45 by aguerin          ###   ########.fr       */
+/*   Updated: 2017/06/21 15:05:49 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -134,4 +134,5 @@ int				ft_is_valid_char(char *valid, char c);
 
 void			ft_perror(const char *message, const int value);
 
+void			ft_strdeldouble(char **str);
 #endif
