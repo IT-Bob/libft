@@ -6,11 +6,17 @@
 /*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/09 12:04:27 by aguerin           #+#    #+#             */
-/*   Updated: 2016/11/09 12:18:58 by aguerin          ###   ########.fr       */
+/*   Updated: 2017/06/21 11:01:25 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
+
+/*
+** ft_strrchr() renvoie le pointeur de la dernière occurence du caractère c
+** trouvé dans la chaîne s.
+** Si c n'est pas trouvé dans s, NULL est renvoyé.
+*/
 
 char	*ft_strrchr(const char *s, int c)
 {
