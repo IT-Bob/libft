@@ -6,7 +6,7 @@
 /*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/16 10:15:53 by aguerin           #+#    #+#             */
-/*   Updated: 2017/01/20 10:02:59 by aguerin          ###   ########.fr       */
+/*   Updated: 2017/06/22 17:18:34 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@
 ** S'il y a un reste, celui-ci est stocké dans list->content.
 */
 
-static int			read_line(t_list *list, char **line, int rd)
+static int	read_line(t_list *list, char **line, int rd)
 {
 	char	buff[BUFF_SIZE + 1];
 	char	*ptr;
@@ -50,13 +50,22 @@ static int			read_line(t_list *list, char **line, int rd)
 	return ((rd > 0 ? 1 : rd));
 }
 
+ void	del(void *content, size_t s)
+{
+	if (s)
+		;
+	if (content)
+		free(content);
+	content = NULL;
+}
+
 /*
 ** Réutilisation des fonctions de gestion de listes de la libft.
 ** content_size sert à stocker un fd.
 ** content est un void* et peut donc contenir une chaîne.
 */
 
-static int			get_next_line_list(int fd, char **line, int rt, t_list *new)
+static int	get_next_line_list(int fd, char **line, int rt, t_list *new)
 {
 	static t_list	*list = NULL;
 
@@ -82,6 +91,8 @@ static int			get_next_line_list(int fd, char **line, int rt, t_list *new)
 	}
 	if (!(rt = read_line(new, line, 1)))
 		list = ft_lstdelonejoin(fd, list);
+	if (!rt)
+		; //ft_lstdel(&list, del);
 	return (rt);
 }
 
@@ -89,7 +100,7 @@ static int			get_next_line_list(int fd, char **line, int rt, t_list *new)
 ** Vérification du fd et du pointeur sur line
 */
 
-int					get_next_line(int fd, char **line)
+int			get_next_line(int fd, char **line)
 {
 	t_list			*new;
 	int				rt;
