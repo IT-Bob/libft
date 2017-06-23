@@ -6,7 +6,7 @@
 /*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/16 10:15:53 by aguerin           #+#    #+#             */
-/*   Updated: 2017/06/22 17:18:34 by aguerin          ###   ########.fr       */
+/*   Updated: 2017/06/23 11:26:46 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,15 +50,6 @@ static int	read_line(t_list *list, char **line, int rd)
 	return ((rd > 0 ? 1 : rd));
 }
 
- void	del(void *content, size_t s)
-{
-	if (s)
-		;
-	if (content)
-		free(content);
-	content = NULL;
-}
-
 /*
 ** Réutilisation des fonctions de gestion de listes de la libft.
 ** content_size sert à stocker un fd.
@@ -91,8 +82,6 @@ static int	get_next_line_list(int fd, char **line, int rt, t_list *new)
 	}
 	if (!(rt = read_line(new, line, 1)))
 		list = ft_lstdelonejoin(fd, list);
-	if (!rt)
-		; //ft_lstdel(&list, del);
 	return (rt);
 }
 
