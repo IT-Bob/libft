@@ -6,11 +6,15 @@
 /*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 09:48:25 by aguerin           #+#    #+#             */
-/*   Updated: 2016/11/16 16:38:39 by aguerin          ###   ########.fr       */
+/*   Updated: 2017/06/28 17:03:50 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
+
+/*
+** Affiche un caractère sur la sortie standard.
+*/
 
 int	ft_putchar(char c)
 {

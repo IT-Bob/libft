@@ -6,11 +6,18 @@
 /*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/21 12:38:54 by aguerin           #+#    #+#             */
-/*   Updated: 2017/06/21 12:41:58 by aguerin          ###   ########.fr       */
+/*   Updated: 2017/06/28 17:08:07 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Alloue et retourne un tableau de chaînes de caractères “fraîches” (toutes
+** terminées par un ’\0’, le tableau également donc) résultant de la découpe
+** de 'str' selon le caractère 'c'.
+** Si l’allocation échoue, la fonction retourne NULL.
+*/
 
 static char	**split(char **new, size_t size, const char *str, char c)
 {

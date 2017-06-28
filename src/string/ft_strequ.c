@@ -6,11 +6,16 @@
 /*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/10 10:31:43 by aguerin           #+#    #+#             */
-/*   Updated: 2016/11/16 15:27:22 by aguerin          ###   ########.fr       */
+/*   Updated: 2017/06/28 16:47:16 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** ft_strequ() effectue la comparaison entre 's1' et 's2', si elles sont
+** identiques, 1 est renvoyé, 0 sinon.
+*/
 
 int		ft_strequ(char const *s1, char const *s2)
 {

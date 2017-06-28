@@ -6,11 +6,17 @@
 /*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/10 14:42:07 by aguerin           #+#    #+#             */
-/*   Updated: 2016/11/16 15:37:22 by aguerin          ###   ########.fr       */
+/*   Updated: 2017/06/28 17:10:08 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Applique la fonction f à chaque caractère de la chaine de caractères
+** pour créer une nouvelle chaine “fraiche” résultant des
+** applications successives de f.
+*/
 
 char		*ft_strmap(char const *s, char (*f)(char))
 {

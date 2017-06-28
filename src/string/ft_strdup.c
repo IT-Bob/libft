@@ -6,12 +6,17 @@
 /*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/08 10:03:54 by aguerin           #+#    #+#             */
-/*   Updated: 2016/11/21 11:33:01 by aguerin          ###   ########.fr       */
+/*   Updated: 2017/06/28 16:45:41 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
+
+/*
+** ft_strdup() alloue la mémoire nécessaire pour pouvoir copier 's1' dans une
+** nouvelle chaîne.
+*/
 
 char	*ft_strdup(const char *s1)
 {

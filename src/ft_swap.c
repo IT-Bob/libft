@@ -6,9 +6,13 @@
 /*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/03 09:59:54 by aguerin           #+#    #+#             */
-/*   Updated: 2016/11/04 10:00:44 by aguerin          ###   ########.fr       */
+/*   Updated: 2017/06/28 16:40:34 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** ft_swap() échange le contenu de deux pointeurs.
+*/
 
 void	ft_swap(int *a, int *b)
 {

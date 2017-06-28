@@ -6,12 +6,18 @@
 /*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/10 14:52:03 by aguerin           #+#    #+#             */
-/*   Updated: 2017/03/10 14:52:05 by aguerin          ###   ########.fr       */
+/*   Updated: 2017/06/28 17:05:24 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
+
+/*
+** ft_putwchar permet d'afficher les caractères étendus.
+** Le char envoyé doit d'abord être converti en décimal pour appliquer le masque
+** unicode. Le binaire est ensuite reconverti en décimal pour l'affichage.
+*/
 
 static int	cut(char *tab, int size, int ret[])
 {
@@ -84,12 +90,6 @@ static char	*find_mask(int size, char *tab)
 	}
 	return (NULL);
 }
-
-/*
-** ft_putwchar permet d'afficher les caractères étendus.
-** Le char envoyé doit d'abord être converti en décimal pour appliquer le masque
-** unicode. Le binaire est ensuite reconverti en décimal pour l'affichage.
-*/
 
 int			ft_putwchar(long c)
 {

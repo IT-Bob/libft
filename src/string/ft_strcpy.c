@@ -6,9 +6,14 @@
 /*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/08 10:19:20 by aguerin           #+#    #+#             */
-/*   Updated: 2016/11/21 11:33:13 by aguerin          ###   ########.fr       */
+/*   Updated: 2017/06/28 16:44:34 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** ft_strcpy() effectue la copie de 'src' dans 'dst'. Si 'src' est plus grand
+** que 'dst', la copie s'arrête. La chaîne est terminée par un '\0'.
+*/
 
 char	*ft_strcpy(char *dst, const char *src)
 {

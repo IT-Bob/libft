@@ -6,11 +6,16 @@
 /*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/08 19:28:13 by aguerin           #+#    #+#             */
-/*   Updated: 2016/11/08 19:54:38 by aguerin          ###   ########.fr       */
+/*   Updated: 2017/06/28 17:26:56 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Affiche le nombre 'n' sur la sortie standard et retourne le nombre
+** de caractères affichés.
+*/
 
 int	ft_putnbr(int n)
 {

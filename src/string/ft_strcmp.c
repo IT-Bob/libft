@@ -6,9 +6,13 @@
 /*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/03 11:57:48 by aguerin           #+#    #+#             */
-/*   Updated: 2016/11/16 11:46:50 by aguerin          ###   ########.fr       */
+/*   Updated: 2017/06/28 16:42:00 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** ft_strcmp() renvoie la différence entre la chaîne 's1' et la chaîne 's2'.
+*/
 
 int	ft_strcmp(const char *s1, const char *s2)
 {

@@ -6,11 +6,20 @@
 /*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/10 14:42:54 by aguerin           #+#    #+#             */
-/*   Updated: 2016/11/18 18:48:40 by aguerin          ###   ########.fr       */
+/*   Updated: 2017/06/28 17:09:29 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Alloue et retourne une copie de la chaîne passée en paramètre sans les
+** espaces blancs au debut et à la fin de cette chaîne. On considère comme
+** espaces blancs les caractères ’ ’, ’\n’ et ’\t’.
+** Si 's' ne contient passée d’espaces blancs au début ou à la fin,
+** la fonction renvoie une copie de 's'.
+** Si l’allocation echoue, la fonction renvoie NULL.
+*/
 
 static int	ft_trim_space(char const c)
 {
