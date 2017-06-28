@@ -6,17 +6,12 @@
 /*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/08 19:11:03 by aguerin           #+#    #+#             */
-/*   Updated: 2017/06/28 16:51:10 by aguerin          ###   ########.fr       */
+/*   Updated: 2017/06/28 17:37:23 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 #include "libft.h"
-
-/*
-** ft_strlcat() concatène la chaîne 's2' à la suite de 's1' sur au maximum
-** 'size' caractères.
-*/
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {

@@ -6,12 +6,12 @@
 /*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/17 10:21:05 by aguerin           #+#    #+#             */
-/*   Updated: 2017/03/17 10:21:17 by aguerin          ###   ########.fr       */
+/*   Updated: 2017/06/28 17:37:37 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-** ft_strwbytlen() renvoie la longueur de la chaîne str en octet.
+** ft_strwbytlen() renvoie la longueur de la chaîne 'str' en octet.
 */
 
 #include "libft.h"
