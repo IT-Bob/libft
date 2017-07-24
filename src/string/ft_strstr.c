@@ -29,13 +29,11 @@ static int	ft_cmp(const char *big, const char *little)
 
 char		*ft_strstr(const char *big, const char *little)
 {
-	char	*fst;
 	int		j;
 	int		find;
 
 	if (!ft_strlen((char*)little))
 		return ((char*)big);
-	fst = NULL;
 	j = 0;
 	find = 0;
 	while (find == 0 && big[j])

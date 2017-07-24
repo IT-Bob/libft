@@ -41,7 +41,7 @@ static int	read_line(t_list *list, char **line, int rd)
 		ft_strdel((char**)&list->content);
 		list->content = tmp;
 	}
-	else if ((ft_strlen(list->content) > 0 ? rd = 1 : rd))
+	else if ((ft_strlen(list->content) > 0 ? (rd = 1) : rd))
 	{
 		*line = ft_strsub(list->content, 0, ft_strlen((char*)list->content));
 		ft_strdel((char**)&list->content);
