@@ -10,6 +10,12 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/**
+** \file	get_next_line.c
+** \author	aguerin@student.42.fr
+** \date	janvier 2017
+*/
+
 #include "get_next_line.h"
 #include "libft.h"
 #include <stdlib.h>
@@ -85,8 +91,20 @@ static int	get_next_line_list(int fd, char **line, int rt, t_list *new)
 	return (rt);
 }
 
-/*
-** Vérification du fd et du pointeur sur line
+/**
+** \brief	Lit une ligne sur le descripteur de fichier donné.
+**
+** La ligne lue est stockée dans le pointeur sur char 'line'. Sa mémoire
+**	est allouée par get_next_line() mais la libération doit être effectuée par
+**	la fonction appelante.
+**
+** \param	fd		- Descripteur de fichier sur lequel effectuer la lecture
+** \param	line	- Pointeur sur chaîne de caractère dans laquelle stocker la
+						ligne lue
+**
+** \return	-1	- Descripteur ou pointeur 'line' incorrect
+** \return	0	- Fin du descripteur
+** \return	1	- Ligne lue sur le descripteur
 */
 
 int			get_next_line(int fd, char **line)

@@ -70,9 +70,18 @@ int				ft_putstr_fd(char const *s, int fd);
 int				ft_putendl_fd(char const *s, int fd);
 int				ft_putnbr_fd(int n, int fd);
 
+/**
+** \struct s_list
+** \brief	Structure pour les listes de libft
+**
+** \param	content			- Variable pour le stockage d'une valeur
+** \param	content_size	- Taille de la Variable
+** \param	next			- Pointeur sur le maillon suivant
+*/
+
 typedef struct	s_list
 {
-	void			*content;
+	void			*co_ntent;
 	size_t			content_size;
 	struct s_list	*next;
 }				t_list;

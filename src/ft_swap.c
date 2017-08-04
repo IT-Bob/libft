@@ -10,8 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-** ft_swap() échange le contenu de deux pointeurs.
+/**
+** \brief	ft_swap() échange le contenu de deux pointeurs.
+**
+** \param	a	- premier pointeur
+** \param	b	- deuxième pointeur
 */
 
 void	ft_swap(int *a, int *b)
