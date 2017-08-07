@@ -6,7 +6,7 @@
 /*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 09:51:57 by aguerin           #+#    #+#             */
-/*   Updated: 2017/06/21 15:05:49 by aguerin          ###   ########.fr       */
+/*   Updated: 2017/08/07 12:12:42 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,7 +81,7 @@ int				ft_putnbr_fd(int n, int fd);
 
 typedef struct	s_list
 {
-	void			*co_ntent;
+	void			*content;
 	size_t			content_size;
 	struct s_list	*next;
 }				t_list;
