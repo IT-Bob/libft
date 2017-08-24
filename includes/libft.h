@@ -6,7 +6,7 @@
 /*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 09:51:57 by aguerin           #+#    #+#             */
-/*   Updated: 2017/08/07 12:12:42 by aguerin          ###   ########.fr       */
+/*   Updated: 2017/08/24 09:01:34 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,7 +70,7 @@ int				ft_putstr_fd(char const *s, int fd);
 int				ft_putendl_fd(char const *s, int fd);
 int				ft_putnbr_fd(int n, int fd);
 
-/**
+/*
 ** \struct s_list
 ** \brief	Structure pour les listes de libft
 **
