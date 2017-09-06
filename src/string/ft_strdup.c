@@ -6,7 +6,7 @@
 /*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/08 10:03:54 by aguerin           #+#    #+#             */
-/*   Updated: 2017/08/28 12:47:37 by aguerin          ###   ########.fr       */
+/*   Updated: 2017/09/06 09:16:25 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,5 +40,5 @@ char	*ft_strdup(const char *s1)
 			return (s);
 		}
 	}
-		return (NULL);
+	return (NULL);
 }
