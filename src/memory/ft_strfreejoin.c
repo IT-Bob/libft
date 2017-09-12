@@ -6,7 +6,7 @@
 /*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/20 10:05:57 by aguerin           #+#    #+#             */
-/*   Updated: 2017/09/12 16:54:10 by aguerin          ###   ########.fr       */
+/*   Updated: 2017/09/12 17:28:41 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char			*ft_strfreejoin(char *s1, char *s2)
 	char	*str;
 	int		len;
 
-	len = ft_strlen(s1) + ft_strlen(s2);
+	len = (s1 ? ft_strlen(s1) : 0) + (s2 ? ft_strlen(s2) : 0);
 	if ((str = ft_strnew(len)))
 	{
 		len = 0;
