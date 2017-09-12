@@ -6,7 +6,7 @@
 /*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/20 10:05:57 by aguerin           #+#    #+#             */
-/*   Updated: 2017/01/20 10:05:59 by aguerin          ###   ########.fr       */
+/*   Updated: 2017/09/12 16:54:10 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ char			*ft_strfreejoin(char *s1, char *s2)
 	if ((str = ft_strnew(len)))
 	{
 		len = 0;
-		while (s1[len])
+		while (s1 && s1[len])
 		{
 			str[len] = s1[len];
 			len++;
@@ -36,7 +36,8 @@ char			*ft_strfreejoin(char *s1, char *s2)
 			s2++;
 		}
 		str[len] = '\0';
-		ft_strdel(&s1);
+		if (s1)
+			ft_strdel(&s1);
 		return (str);
 	}
 	return (NULL);
