@@ -6,7 +6,7 @@
 /*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 09:51:57 by aguerin           #+#    #+#             */
-/*   Updated: 2017/08/24 09:01:34 by aguerin          ###   ########.fr       */
+/*   Updated: 2017/10/24 14:36:29 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -104,7 +104,6 @@ int				ft_putstrs(char const *str);
 int				ft_factorial(int nb);
 int				ft_sqrt(int nb);
 int				ft_count_word(char const *str, char c);
-t_list			*ft_lstdelonejoin(int content_size, t_list *list);
 char			*ft_strfreejoin(char *s1, char *s2);
 void			ft_lstaddend(t_list **alst, t_list *new);
 t_list			*ft_lstaddnew(void const *content, size_t content_size,

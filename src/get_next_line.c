@@ -6,7 +6,7 @@
 /*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/16 10:15:53 by aguerin           #+#    #+#             */
-/*   Updated: 2017/08/24 09:32:47 by aguerin          ###   ########.fr       */
+/*   Updated: 2017/10/24 14:38:00 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,12 +23,28 @@
 #include <sys/uio.h>
 #include <unistd.h>
 
+static t_list	*lstdelonejoin(int content_size, t_list *list)
+{
+	t_list *new;
+
+	new = list;
+	if (new)
+	{
+		list = list->next;
+		if (new->content_size && new->content_size == (size_t)content_size)
+			free(new->content);
+		free(new);
+		new = NULL;
+	}
+	return (list);
+}
+
 /*
 ** Lit une ligne et la stocke dans line.
 ** S'il y a un reste, celui-ci est stocké dans list->content.
 */
 
-static int	read_line(t_list *list, char **line, int rd)
+static int		read_line(t_list *list, char **line, int rd)
 {
 	char	buff[BUFF_SIZE + 1];
 	char	*ptr;
@@ -62,7 +78,7 @@ static int	read_line(t_list *list, char **line, int rd)
 ** content est un void* et peut donc contenir une chaîne.
 */
 
-static int	get_next_line_list(int fd, char **line, int rt, t_list *new)
+static int		get_next_line_list(int fd, char **line, int rt, t_list *new)
 {
 	static t_list	*list = NULL;
 
@@ -87,7 +103,7 @@ static int	get_next_line_list(int fd, char **line, int rt, t_list *new)
 			return (-1);
 	}
 	if (!(rt = read_line(new, line, 1)))
-		list = ft_lstdelonejoin(fd, list);
+		list = lstdelonejoin(fd, list);
 	return (rt);
 }
 
@@ -107,7 +123,7 @@ static int	get_next_line_list(int fd, char **line, int rt, t_list *new)
 ** \return	1	- Ligne lue sur le descripteur
 */
 
-int			get_next_line(int fd, char **line)
+int				get_next_line(int fd, char **line)
 {
 	t_list			*new;
 	int				rt;
