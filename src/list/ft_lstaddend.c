@@ -6,7 +6,7 @@
 /*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/30 12:14:25 by aguerin           #+#    #+#             */
-/*   Updated: 2017/01/30 12:14:49 by aguerin          ###   ########.fr       */
+/*   Updated: 2017/10/25 09:27:22 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,5 +28,6 @@ void	ft_lstaddend(t_list **alst, t_list *new)
 		while (lst->next)
 			lst = lst->next;
 		lst->next = new;
+		new->prev = lst;
 	}
 }
