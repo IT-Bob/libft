@@ -6,7 +6,7 @@
 /*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/16 17:38:07 by aguerin           #+#    #+#             */
-/*   Updated: 2017/06/21 14:27:30 by aguerin          ###   ########.fr       */
+/*   Updated: 2017/11/07 15:55:12 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,10 @@ t_list	*ft_lstnew(void const *content, size_t content_size)
 		else
 		{
 			if (!(list->content = malloc(sizeof(content) * content_size)))
+			{
+				free(list);
 				return (NULL);
+			}
 			ft_memcpy(list->content, content, content_size);
 			list->content_size = content_size;
 		}
