@@ -6,7 +6,7 @@
 /*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 09:51:57 by aguerin           #+#    #+#             */
-/*   Updated: 2017/11/24 10:54:47 by aguerin          ###   ########.fr       */
+/*   Updated: 2017/11/24 11:42:15 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -93,6 +93,8 @@ void			ft_lstdel(t_list **alst, void (*del)(void *, size_t));
 void			ft_lstadd(t_list **alst, t_list *new);
 void			ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 void			ft_lstiter_if(t_list *lst, void (*f)(void*), int (t)(void*));
+t_list			*ft_lstfind(t_list *lst, int f(void*));
+t_list			*ft_lstfind_prev(t_list *lst, int f(void*));
 t_list			*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 
 int				ft_nbrlen(long nb);
