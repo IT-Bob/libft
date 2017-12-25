@@ -93,6 +93,11 @@ msg:
 
 norme: fclean msg normeinc normesrc
 
+doxygen:
+	@echo "Pas de documentation pour Libft"
+
+cleandoxy: doxygen
+
 # Couleurs
 
 RESET = \033[0m
@@ -106,4 +111,4 @@ ROUGE = \033[31m
 ROUGEC = \033[1;31m
 VERT  = \033[32m
 
-.PHONY: all clean fclean re
+.PHONY: all clean fclean re doxygen cleandoxy
