@@ -61,7 +61,7 @@ INC = $(addprefix $(INC_PATH), $(INC_FILE))
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	@echo "$(ROUGEC)Création de la bibliothèque $(NAME)"
+	@echo "$(MAGEN)Création de la bibliothèque $(NAME)"
 	@ar rc $(NAME) $(OBJ)
 	@echo "Création de l'index pour $(NAME)$(RESET)"
 	@ranlib $(NAME)
@@ -70,28 +70,14 @@ $(NAME): $(OBJ)
 $(OBJ): $(INC)
 
 clean:
-	@echo "Suppression des fichiers objets de libft"
+	@echo "$(ROUGEC)Suppression des fichiers objets de $(NAME)$(RESET)"
 	@rm -f $(OBJ)
 
 fclean: clean
-	@echo "Suppression de la bibliothèque $(NAME)"
+	@echo "$(ROUGEC)Suppression de la bibliothèque $(NAME)$(RESET)"
 	@rm -f $(NAME)
 
 re: fclean all
-
-# Règles pour la norme
-normeinc:
-	@echo "$(MAGEN)Norme des headers$(RESET)"
-	@norminette includes/
-
-normesrc:
-	@echo "$(MAGEN)Norme des sources$(RESET)"
-	@norminette src/
-
-msg:
-	@echo "$(MAGEN)Norme pour libft :$(RESET)"
-
-norme: fclean msg normeinc normesrc
 
 doxygen:
 	@echo "Pas de documentation pour Libft"
