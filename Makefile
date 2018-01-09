@@ -24,7 +24,7 @@ MEM_FILE = ft_bzero.c ft_memalloc.c ft_memrealloc.c ft_memccpy.c ft_memchr.c ft_
 PRINT_CHAR_FILE = ft_putchar.c ft_putchar_fd.c ft_putcharl.c ft_putcharl_fd.c ft_putchars.c ft_putchars_fd.c ft_putwchar.c ft_putwcharl.c ft_putwchars.c ft_putwnchar.c ft_putxchar.c ft_putxwchar.c
 PRINT_NBR_FILE = ft_putnbr.c ft_putnbr_fd.c ft_putnbr_long.c ft_putnbrl.c ft_putnbrs.c
 PRINT_STR_FILE = ft_perror.c ft_putendl.c ft_putendl_fd.c ft_putnstr.c ft_putnstrs.c ft_putstr.c ft_putstr_fd.c ft_putstrlower.c ft_putstrs.c ft_putstrupper.c ft_putwendl.c ft_putwstr.c ft_putwstrs.c
-STR_FILE = ft_count_word.c ft_nbrlen.c ft_strcat.c ft_strchr.c ft_strclr.c ft_strcmp.c ft_strcpy.c ft_strdup.c ft_strequ.c ft_strjoin.c ft_strlcat.c ft_strlen.c ft_strmap.c ft_strmapi.c ft_strncat.c ft_strncmp.c ft_strncpy.c ft_strnequ.c ft_strnstr.c ft_strrchr.c ft_strsplit.c ft_strstr.c ft_strsub.c ft_strtolower.c ft_strtoupper.c ft_strtrim.c ft_strwbytlen.c ft_strwlen.c
+STR_FILE = ft_count_word.c ft_nbrlen.c ft_strcat.c ft_strchr.c ft_strclr.c ft_strcmp.c ft_strcpy.c ft_strdup.c ft_strequ.c ft_strjoin.c ft_strlcat.c ft_strlen.c ft_strmap.c ft_strmapi.c ft_strncat.c ft_strncmp.c ft_strncpy.c ft_strnequ.c ft_strnstr.c ft_strrchr.c ft_strsplit.c ft_strstr.c ft_strsub.c ft_strtolower.c ft_strtoupper.c ft_strtrim.c ft_strwbytlen.c ft_strwlen.c ft_strlendouble.c
 TAB_FILE = fill_tab.c
 
 ##### ft_printf
@@ -80,9 +80,9 @@ fclean: clean
 re: fclean all
 
 doxygen:
-	@echo "Pas de documentation pour Libft"
+	@echo "$(JAUNE)Pas de documentation pour Libft$(RESET)"
 
-cleandoxy: doxygen
+cleandoxy:
 
 # Couleurs
 

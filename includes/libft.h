@@ -6,7 +6,7 @@
 /*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 09:51:57 by aguerin           #+#    #+#             */
-/*   Updated: 2017/12/08 12:14:12 by aguerin          ###   ########.fr       */
+/*   Updated: 2018/01/09 11:18:00 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -152,4 +152,6 @@ int				ft_lstcount_all(t_list *list, int f(void*));
 void			ft_perror(const char *message, const int value);
 
 void			ft_strdeldouble(char **str);
+int				ft_strlendouble(char **doublestr);
+
 #endif
