@@ -83,6 +83,7 @@ doxygen:
 	@echo "$(JAUNE)Pas de documentation pour Libft$(RESET)"
 
 cleandoxy:
+	@echo "$(JAUNE)Pas de documentation pour Libft$(RESET)"
 
 # Couleurs
 
