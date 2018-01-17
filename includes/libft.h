@@ -6,7 +6,7 @@
 /*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 09:51:57 by aguerin           #+#    #+#             */
-/*   Updated: 2018/01/10 14:54:55 by aguerin          ###   ########.fr       */
+/*   Updated: 2018/01/16 18:34:57 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -101,7 +101,7 @@ t_list			*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 
 int				ft_nbrlen(long nb);
 int				ft_isspace(int c);
-void			ft_swap(char *a, char *b);
+void			ft_swap(int *a, int *b);
 int				ft_putnbrl(int n);
 int				ft_putnbrs(int n);
 int				ft_putcharl(char c);
