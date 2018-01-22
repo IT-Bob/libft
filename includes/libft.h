@@ -6,7 +6,7 @@
 /*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 09:51:57 by aguerin           #+#    #+#             */
-/*   Updated: 2018/01/09 11:18:00 by aguerin          ###   ########.fr       */
+/*   Updated: 2018/01/22 17:11:38 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,7 +69,6 @@ int				ft_putchar_fd(char c, int fd);
 int				ft_putstr_fd(char const *s, int fd);
 int				ft_putendl_fd(char const *s, int fd);
 int				ft_putnbr_fd(int n, int fd);
-void			*ft_memrealloc(void *old, size_t oldsize, size_t newsize);
 
 /*
 ** \struct s_list
