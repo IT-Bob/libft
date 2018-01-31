@@ -6,7 +6,7 @@
 /*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/15 15:04:34 by aguerin           #+#    #+#             */
-/*   Updated: 2017/06/06 17:45:19 by aguerin          ###   ########.fr       */
+/*   Updated: 2018/01/31 16:26:35 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,11 +25,11 @@ static int	print(const char *out, int width, int precision, int left)
 	else if (precision == -1)
 		length = 0;
 	if (!left)
-		cmp += ft_putxchar(' ', width - length);
+		cmp += ft_putnchar(' ', width - length);
 	if (out)
 		cmp += ft_putnstr(out, length);
 	if (left)
-		cmp += ft_putxchar(' ', width - length);
+		cmp += ft_putnchar(' ', width - length);
 	return (cmp);
 }
 

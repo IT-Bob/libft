@@ -6,7 +6,7 @@
 /*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/28 16:00:56 by aguerin           #+#    #+#             */
-/*   Updated: 2017/03/28 16:01:11 by aguerin          ###   ########.fr       */
+/*   Updated: 2018/01/31 16:26:24 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,10 @@ static int	print(int width, int specifier[])
 
 	cmp = 0;
 	if (!specifier[3])
-		cmp += ft_putxchar((specifier[1] ? '0' : ' '), width - 1);
+		cmp += ft_putnchar((specifier[1] ? '0' : ' '), width - 1);
 	cmp += ft_putchar('%');
 	if (specifier[3])
-		cmp += ft_putxchar(' ', width - 1);
+		cmp += ft_putnchar(' ', width - 1);
 	return (cmp);
 }
 

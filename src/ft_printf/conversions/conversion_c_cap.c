@@ -6,7 +6,7 @@
 /*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/15 16:22:43 by aguerin           #+#    #+#             */
-/*   Updated: 2017/03/15 16:22:56 by aguerin          ###   ########.fr       */
+/*   Updated: 2018/01/31 16:25:27 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,10 @@ static int	print(wchar_t out, int width, int left)
 
 	cmp = 0;
 	if (!left)
-		cmp += ft_putxchar(' ', width - ft_charwbytlen(out));
+		cmp += ft_putnchar(' ', width - ft_charwbytlen(out));
 	cmp += ft_putwchar(out);
 	if (left)
-		cmp += ft_putxchar(' ', width - ft_charwbytlen(out));
+		cmp += ft_putnchar(' ', width - ft_charwbytlen(out));
 	return (cmp);
 }
 

@@ -6,13 +6,22 @@
 /*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/03 17:05:44 by aguerin           #+#    #+#             */
-/*   Updated: 2017/04/03 17:05:47 by aguerin          ###   ########.fr       */
+/*   Updated: 2018/01/31 16:24:42 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 #include "libft.h"
 
+int	ft_putnchar(char c, int x)
+{
+	int	i;
+
+	i = -1;
+	while (++i < x)
+		write(1, &c, 1);
+	return (i);
+}
 /*
 ** print_r() et print_l() s'occupent de l'affichage pour les conversions
 ** numériques (%d %i %o %u %x).
@@ -35,9 +44,9 @@ static int	print_l(const char *out, int width, int precision, int specifier[])
 		cmp += ft_putchar(' ');
 	if (specifier[4] || specifier[5])
 		cmp += ft_putchar((specifier[5] ? '-' : '+'));
-	cmp += ft_putxchar('0', precision);
+	cmp += ft_putnchar('0', precision);
 	cmp += (out ? ft_putstr(out) : 0);
-	cmp += ft_putxchar(' ', width);
+	cmp += ft_putnchar(' ', width);
 	return (cmp);
 }
 
@@ -51,7 +60,7 @@ int			print_r(const char *out, int width, int precision, int specifier[])
 		return (print_l(out, width, precision, specifier));
 	cmp = 0;
 	if (!specifier[1])
-		cmp += ft_putxchar(' ', width);
+		cmp += ft_putnchar(' ', width);
 	if (specifier[0] == 2)
 		cmp += ft_putstr("0x");
 	else if (specifier[0] == 3)
@@ -63,8 +72,8 @@ int			print_r(const char *out, int width, int precision, int specifier[])
 	if (specifier[4] || specifier[5])
 		cmp += ft_putchar((specifier[5] ? '-' : '+'));
 	if (specifier[1])
-		cmp += ft_putxchar('0', width);
-	cmp += ft_putxchar('0', precision);
+		cmp += ft_putnchar('0', width);
+	cmp += ft_putnchar('0', precision);
 	cmp += (out ? ft_putstr(out) : 0);
 	return (cmp);
 }

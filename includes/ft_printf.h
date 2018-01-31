@@ -6,13 +6,14 @@
 /*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/15 12:55:45 by aguerin           #+#    #+#             */
-/*   Updated: 2017/03/15 12:55:47 by aguerin          ###   ########.fr       */
+/*   Updated: 2018/01/31 16:25:05 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
 
+# include <unistd.h>
 # include <stdarg.h>
 # include <wchar.h>
 
@@ -27,6 +28,7 @@ void			correction_specifier(int specifier[], int nb, int ox, int d);
 char			*adjust(int *width, int *prec, const char *out, int spec[]);
 char			*wadjust(int *width, wchar_t *out, int spec[]);
 int				print_r(const char *out, int width, int prec, int spec[]);
+int				ft_putnchar(char c, int x);
 
 /*
 ** src/conversions

@@ -6,7 +6,7 @@
 /*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/15 15:58:53 by aguerin           #+#    #+#             */
-/*   Updated: 2017/03/15 15:59:11 by aguerin          ###   ########.fr       */
+/*   Updated: 2018/01/31 16:25:55 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,9 @@ static int	print_l(const char *out, int width, int precision, int specifier[])
 		cmp += ft_putchar(' ');
 	if (specifier[4] || specifier[5])
 		cmp += ft_putchar((specifier[5] ? '-' : '+'));
-	cmp += ft_putxchar('0', precision);
+	cmp += ft_putnchar('0', precision);
 	cmp += ft_putstr(out);
-	cmp += ft_putxchar(' ', width);
+	cmp += ft_putnchar(' ', width);
 	return (cmp);
 }
 
@@ -38,14 +38,14 @@ static int	print(const char *out, int width, int precision, int specifier[])
 		return (print_l(out, width, precision, specifier));
 	cmp = 0;
 	if (!specifier[1])
-		cmp += ft_putxchar(' ', width);
+		cmp += ft_putnchar(' ', width);
 	if (specifier[2] && !specifier[5])
 		cmp += ft_putchar(' ');
 	if (specifier[4] || specifier[5])
 		cmp += ft_putchar((specifier[5] ? '-' : '+'));
 	if (specifier[1])
-		cmp += ft_putxchar('0', width);
-	cmp += ft_putxchar('0', precision);
+		cmp += ft_putnchar('0', width);
+	cmp += ft_putnchar('0', precision);
 	if (out)
 		cmp += ft_putstr(out);
 	return (cmp);
