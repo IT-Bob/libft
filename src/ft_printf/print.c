@@ -6,14 +6,14 @@
 /*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/03 17:05:44 by aguerin           #+#    #+#             */
-/*   Updated: 2018/01/31 16:24:42 by aguerin          ###   ########.fr       */
+/*   Updated: 2018/02/01 09:58:43 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 #include "libft.h"
 
-int	ft_putnchar(char c, int x)
+int			ft_putnchar(char c, int x)
 {
 	int	i;
 
@@ -22,6 +22,7 @@ int	ft_putnchar(char c, int x)
 		write(1, &c, 1);
 	return (i);
 }
+
 /*
 ** print_r() et print_l() s'occupent de l'affichage pour les conversions
 ** numériques (%d %i %o %u %x).
