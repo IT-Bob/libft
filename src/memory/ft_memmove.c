@@ -6,11 +6,11 @@
 /*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/09 17:12:35 by aguerin           #+#    #+#             */
-/*   Updated: 2016/11/21 11:14:07 by aguerin          ###   ########.fr       */
+/*   Updated: 2018/02/02 13:35:22 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {

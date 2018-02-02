@@ -6,9 +6,11 @@
 /*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/03 11:57:48 by aguerin           #+#    #+#             */
-/*   Updated: 2017/06/28 16:42:00 by aguerin          ###   ########.fr       */
+/*   Updated: 2018/02/02 13:39:28 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 /*
 ** ft_strcmp() renvoie la différence entre la chaîne 's1' et la chaîne 's2'.

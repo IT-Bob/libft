@@ -6,11 +6,11 @@
 /*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/08 17:42:10 by aguerin           #+#    #+#             */
-/*   Updated: 2016/11/21 11:13:33 by aguerin          ###   ########.fr       */
+/*   Updated: 2018/02/02 13:34:59 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {

@@ -6,9 +6,11 @@
 /*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/08 11:30:06 by aguerin           #+#    #+#             */
-/*   Updated: 2016/11/08 19:56:20 by aguerin          ###   ########.fr       */
+/*   Updated: 2018/02/02 13:37:40 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 /*
 ** ft_strcat() concatène la chaîne s2 à la suite de s1. s1 doit avoir été

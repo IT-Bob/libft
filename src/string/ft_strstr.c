@@ -6,11 +6,10 @@
 /*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/09 12:43:42 by aguerin           #+#    #+#             */
-/*   Updated: 2016/11/17 10:22:53 by aguerin          ###   ########.fr       */
+/*   Updated: 2018/02/02 13:39:01 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
 #include "libft.h"
 
 static int	ft_cmp(const char *big, const char *little)

@@ -6,11 +6,11 @@
 /*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/09 17:12:46 by aguerin           #+#    #+#             */
-/*   Updated: 2017/06/21 14:33:19 by aguerin          ###   ########.fr       */
+/*   Updated: 2018/02/02 13:35:47 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
 /*
 ** ft_memchr() renvoie le pointeur sur c trouvé dans s.

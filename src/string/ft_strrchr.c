@@ -6,11 +6,11 @@
 /*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/09 12:04:27 by aguerin           #+#    #+#             */
-/*   Updated: 2017/06/21 11:01:25 by aguerin          ###   ########.fr       */
+/*   Updated: 2018/02/02 13:38:51 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
 /*
 ** ft_strrchr() renvoie le pointeur de la dernière occurence du caractère c

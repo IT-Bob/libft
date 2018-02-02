@@ -6,11 +6,11 @@
 /*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/08 16:26:28 by aguerin           #+#    #+#             */
-/*   Updated: 2017/06/21 14:30:21 by aguerin          ###   ########.fr       */
+/*   Updated: 2018/02/02 13:34:36 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
 /*
 ** ft_bzero() remplie la zone mémoire de s avec 0.

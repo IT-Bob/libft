@@ -6,9 +6,11 @@
 /*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/08 10:19:20 by aguerin           #+#    #+#             */
-/*   Updated: 2017/06/28 16:44:34 by aguerin          ###   ########.fr       */
+/*   Updated: 2018/02/02 13:37:17 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 /*
 ** ft_strcpy() effectue la copie de 'src' dans 'dst'. Si 'src' est plus grand
