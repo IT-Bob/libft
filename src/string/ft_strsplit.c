@@ -6,11 +6,34 @@
 /*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/21 12:38:54 by aguerin           #+#    #+#             */
-/*   Updated: 2017/06/28 17:08:07 by aguerin          ###   ########.fr       */
+/*   Updated: 2018/02/05 15:09:53 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+static unsigned int	ft_count_word(const char *s, char c)
+{
+	int	i;
+	int	cmp;
+	int	word;
+
+	i = 0;
+	cmp = 0;
+	word = 0;
+	while (s[i] != '\0')
+	{
+		if (s[i] != c && !word)
+		{
+			cmp++;
+			word = 1;
+		}
+		else if (s[i] == c)
+			word = 0;
+		i++;
+	}
+	return (cmp);
+}
 
 /*
 ** Alloue et retourne un tableau de chaînes de caractères “fraîches” (toutes
@@ -19,7 +42,8 @@
 ** Si l’allocation échoue, la fonction retourne NULL.
 */
 
-static char	**split(char **new, size_t size, const char *str, char c)
+static char			**split(char **new, size_t size, const char *str,
+										char c)
 {
 	char	*begin;
 	char	*end;
@@ -39,7 +63,7 @@ static char	**split(char **new, size_t size, const char *str, char c)
 	return (new);
 }
 
-char		**ft_strsplit(const char *str, char c)
+char				**ft_strsplit(const char *str, char c)
 {
 	char	**new;
 	size_t	size;
@@ -49,7 +73,10 @@ char		**ft_strsplit(const char *str, char c)
 	{
 		size = ft_count_word(str, c);
 		if (!(new = (char**)ft_memalloc(sizeof(char*) * (size + 1))))
-			ft_perror("Erreur d'allocation", -1);
+		{
+			ft_putendl_fd("Erreur d'allocation", 2);
+			return (NULL);
+		}
 		new = split(new, size, str, c);
 	}
 	return (new);

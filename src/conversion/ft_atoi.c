@@ -6,18 +6,26 @@
 /*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/07 14:31:36 by aguerin           #+#    #+#             */
-/*   Updated: 2016/11/07 17:50:55 by aguerin          ###   ########.fr       */
+/*   Updated: 2018/02/02 17:22:09 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+static int	is_space(int c)
+{
+	if ((c == '\t') || (c == '\n') || (c == '\v') ||
+		(c == '\f') || (c == '\r') || (c == ' '))
+		return (1);
+	return (0);
+}
 
 /*
 ** ft_atoi() prend en entrée une chaîne de caractères (censée représenter un
 ** nombre) et renvoie sa représentation en int.
 */
 
-int	ft_atoi(const char *str)
+int			ft_atoi(const char *str)
 {
 	int i;
 	int nb;
@@ -26,7 +34,7 @@ int	ft_atoi(const char *str)
 	nb = 0;
 	i = 0;
 	neg = 1;
-	while (ft_isspace(str[i]))
+	while (is_space(str[i]))
 		i++;
 	if (str[i] == '-')
 	{

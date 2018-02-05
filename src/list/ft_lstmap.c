@@ -6,11 +6,27 @@
 /*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/18 11:46:13 by aguerin           #+#    #+#             */
-/*   Updated: 2017/06/21 14:26:13 by aguerin          ###   ########.fr       */
+/*   Updated: 2018/02/05 15:10:24 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+static void	ft_lstaddend(t_list **alst, t_list *new)
+{
+	t_list	*lst;
+
+	lst = *alst;
+	if (!lst)
+		*alst = new;
+	else
+	{
+		while (lst->next)
+			lst = lst->next;
+		lst->next = new;
+		new->prev = lst;
+	}
+}
 
 /*
 ** ft_lstmap() applique la fonction f sur chaque maillon de la liste lst et crée
